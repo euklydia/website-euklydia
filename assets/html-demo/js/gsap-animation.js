@@ -475,6 +475,18 @@ function pbmit_portfolio_style2() {
 	}
 }
 
+function addHorizontalScroll() {
+    const container = document.querySelector('.pbmit-element-portfolio-style-3 .pbmit-element-inner');
+    container.addEventListener('wheel', function(event) {
+        if (!event.shiftKey) {
+            event.preventDefault();  // prevent vertical scrolling
+            container.scrollLeft += event.deltaY;  // scroll horizontally
+        }
+    }, {passive: false});  // use passive false to allow preventDefault
+}
+
+
+ 
 
 
 
@@ -525,6 +537,7 @@ function pbmit_portfolio_style3() {
                 });
             });
         }
+ 
     }
 
     // Use ScrollTrigger.matchMedia to handle different screen sizes
