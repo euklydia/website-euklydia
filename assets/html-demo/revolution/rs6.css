@@ -1285,8 +1285,7 @@ rs-arrow 					{	display:block; pointer-events: all;}
 .tp-arr-imgholder,
 rs-poster,
 .tp-thumb-image,
-.tp-tab-image					{	background-position: center center; background-size:cover;width:100%;height:100%; display:block; position:absolute;top:0px;left:0px;}
-
+ 
 rs-poster 						 { cursor:pointer; z-index:3; }
 
 .tp-tab.rs-touchhover,
@@ -1307,12 +1306,7 @@ rs-poster 						 { cursor:pointer; z-index:3; }
 
 
 
-.tparrows						{	cursor:pointer; background:#000; background:rgba(0,0,0,0.5); width:40px;height:40px;position:absolute; display:block; z-index:1000; }
-.tparrows.rs-touchhover 				{	background:#000;}
-.tparrows:before				{	font-family: "revicons"; font-size:15px; color:#fff; display:block; line-height: 40px; text-align: center;}
-.tparrows.tp-leftarrow:before	{	content: '\e824'; }
-.tparrows.tp-rightarrow:before	{	content: '\e825'; }
-
+ 
 /*.tp-thumb-mask {max-width: 100% !important}*/
 
 /************************

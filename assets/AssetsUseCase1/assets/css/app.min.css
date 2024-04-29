@@ -7147,12 +7147,9 @@ table .dropdown {
 }
 
 .nav-analiytics-style .nav-link.active {
-  border-color: #5c6bc0;
-  border-radius: 0.8rem;
-  background: none;
+   background: #28a745;
   color: black;
-  font-weight: 500;
-}
+ }
 
 .tourStep {
   border: none;
@@ -8755,7 +8752,7 @@ body:not(.stretch-layout) .app-block .app-content .app-content-body {
   background-color: red;
   background-size: cover !important;
   background-position: center !important;
-  height: 300px;
+  height: 500px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -10205,7 +10202,7 @@ small {
 }
 
 body.dark {
-  background-color: #202124;
+  background-color: #00372C;
   color: #d4d4d4;
 }
 
@@ -10719,7 +10716,7 @@ body.dark a.list-group-item:hover {
 
 body.dark .card {
   background: none;
-  border-color: #383a3f;
+  border-color: white;
 }
 
 body.dark .card .card-header {
@@ -11837,6 +11834,7 @@ body.dark.horizontal-navigation .navigation {
 
   .card .card-body {
     padding: 1.2rem;
+    color: white;
   }
 }
 

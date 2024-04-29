@@ -520,7 +520,7 @@ function pbmit_portfolio_style3() {
                     }
                 },
             });
-
+ 
             const pbmproject = document.querySelectorAll('.pbmit-element-portfolio-style-3 .pbminfotech-post-content');
             pbmproject.forEach((section, index) => {
                 gsap.to(section, {
@@ -532,7 +532,9 @@ function pbmit_portfolio_style3() {
                         start: "right 100%",
                         end: "right 80%",
                         scrub: true,
-                        toggleClass: { targets: section, className: "active" }
+                        toggleClass: { targets: section, className: "active" },
+						
+						
                     }
                 });
             });

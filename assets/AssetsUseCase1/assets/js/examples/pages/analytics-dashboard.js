@@ -166,22 +166,20 @@ $(function () {
 
     function device_session_chart() {
         if ($('#device_session_chart').length) {
-
+    
+            // Updated data for the chart
             var data = [
                 {
-                    name: "Mobile",
-                    data: [90, 152, 138, 145, 120, 123, 140]
+                    name: "Paid Reach",
+                    data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1753, 25759, 17900, 19586, 19922, 15266]
                 },
                 {
-                    name: "Tablet",
-                    data: [125, 90, 128, 135, 150, 123, 180]
-                },
-                {
-                    name: "Desktop",
-                    data: [50, 200, 138, 135, 100, 123, 90]
+                    name: "Amount spent",
+                    data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.22, 3.39, 3.1, 8.84, 9.3, 8.62]
                 }
             ];
-
+    
+            // Updated options for the chart
             var options = {
                 chart: {
                     type: 'area',
@@ -198,9 +196,8 @@ $(function () {
                     toolbar: {
                         show: false,
                     }
-
                 },
-                colors: [colors.primary, colors.secondary, colors.success],
+                colors: [ colors.danger,colors.success,],
                 dataLabels: {
                     enabled: false
                 },
@@ -221,25 +218,24 @@ $(function () {
                 },
                 xaxis: {
                     categories: [
-                        "01 feb",
-                        "11 feb",
-                        "21 feb",
-                        "02 feb",
-                        "05 feb",
-                        "06 feb",
-                        "07 feb"
+                        "2024-02-01", "2024-02-02", "2024-02-03", "2024-02-04", "2024-02-05", "2024-02-06", "2024-02-07",
+                        "2024-02-08", "2024-02-09", "2024-02-10", "2024-02-11", "2024-02-12", "2024-02-13", "2024-02-14",
+                        "2024-02-15", "2024-02-16", "2024-02-17", "2024-02-18", "2024-02-19", "2024-02-20", "2024-02-21",
+                        "2024-02-22", "2024-02-23", "2024-02-24", "2024-02-25", "2024-02-26", "2024-02-27", "2024-02-28",
+                        "2024-02-29"
                     ]
                 }
             };
-
+    
             var chart = new ApexCharts(
                 document.querySelector("#device_session_chart"),
                 options
             );
-
+    
             chart.render();
         }
     }
+    
 
     function analytics_tab1() {
         if ($('#analytics-tab-1').length) {
