@@ -16079,3 +16079,16 @@ body .pbmit-marquee-overtext-style-1 .elementor-icon-list-item .elementor-icon-l
 		position: inherit;
 	}
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+ .element {
+    overflow: auto;  
+    scrollbar-width: none;  
+    -ms-overflow-style: none;  
+}
+.element::-webkit-scrollbar {
+    display: none; 
+}
