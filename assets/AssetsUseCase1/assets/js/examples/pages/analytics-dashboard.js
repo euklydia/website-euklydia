@@ -179,8 +179,7 @@ $(function () {
                 }
             ];
     
-            // Updated options for the chart
-            var options = {
+             var options = {
                 chart: {
                     type: 'area',
                     fontFamily: chartFontStyle,
@@ -445,7 +444,7 @@ $(function () {
                         "2024-02-28T00:00:00", "2024-02-29T00:00:00"
                     ]
                 },
-                colors: ['#00A3E0'], // Replace `colors.info` with a specific color if necessary
+                colors: [colors.warning], // Replace `colors.info` with a specific color if necessary
                 fill: {
                     type: 'gradient',
                     gradient: {
