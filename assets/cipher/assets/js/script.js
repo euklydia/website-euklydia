@@ -229,29 +229,36 @@
     if ($("#contact-form-mejor").length) {
         $("#contact-form-mejor").validate({
             rules: {
-                name: {
+                firstname: {
                     required: true,
-                    minlength: 2
+                    minlength: 2,
+                    regex: "^[a-zA-Z]+$"  // Only allows letters (no numbers or special characters)
                 },
-
-                email: "required",
-
-                phone: "required",
-
-                subject: {
-                    required: true
-                }
-
-
+                lastname: {
+                    required: true,
+                    minlength: 2,
+                    regex: "^[a-zA-Z]+$"  // Only allows letters (no numbers or special characters)
+                },
+                email: {
+                    required: true,
+                    email: true  // Validates the email address
+                },
+                Company: "required",  // Assuming you want to make the company field required
+                note: "required"  // Validates the message field as required
             },
-
             messages: {
-                name: "Please enter your name",
-                email: "Please enter your email address",
-                phone: "Please enter your phone number",
-                subject: "Please select your contact subject"
+                firstname: {
+                    required: "Please enter your First name",
+                    regex: "Please enter only letters for your first name"
+                },
+                lastname: {
+                    required: "Please enter your Last name",
+                    regex: "Please enter only letters for your first name"
+                },
+                email: "Please enter a valid email address",
+                Company: "Please enter your company name",
+                note: "Please enter a message"
             },
-
             submitHandler: function (form) {
                 $.ajax({
                     type: "POST",
@@ -273,11 +280,18 @@
                         }, 3000);
                     }
                 });
-                return false; // required to block normal submit since you used ajax
+                return false; // Prevents the default form submission
             }
-
         });
+    
+        // Adding method for regex validation
+        $.validator.addMethod("regex", function(value, element, regexp) {
+            var re = new RegExp(regexp);
+            return this.optional(element) || re.test(value);
+        }, "Please check your input.");
     }
+    
+    
 
 
     $(document).ready(function () {
