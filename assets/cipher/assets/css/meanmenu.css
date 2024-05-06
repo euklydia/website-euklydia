@@ -39,14 +39,14 @@ a.meanmenu-reveal {
     cursor: pointer;
     width: 52px;
     height: 52px;
-    border: 1px solid #f1f45d;
+    border: 1px solid #00E37D;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     margin-left: 40px;
-	background: #f1f45d;
+	background: #00E37D;
 }
 
 .dark-page .mean-container a.meanmenu-reveal {
