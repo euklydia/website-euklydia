@@ -232,12 +232,12 @@
                 firstname: {
                     required: true,
                     minlength: 2,
-                    regex: "^[a-zA-Z]+$"  // Only allows letters (no numbers or special characters)
+                    regex: "^[a-zA-Z ]+$"  // Only allows letters (no numbers or special characters)
                 },
                 lastname: {
                     required: true,
                     minlength: 2,
-                    regex: "^[a-zA-Z]+$"  // Only allows letters (no numbers or special characters)
+                    regex: "^[a-zA-Z ]+$"  // Only allows letters (no numbers or special characters)
                 },
                 email: {
                     required: true,

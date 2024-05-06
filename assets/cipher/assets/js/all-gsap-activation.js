@@ -94,7 +94,8 @@ if (btn_hover_all) {
 var image = document.getElementsByClassName('imageParallax');
 new simpleParallax(image, {
     delay: .6,
-    transition: 'cubic-bezier(0,0,0,1)'
+    transition: 'cubic-bezier(0,0,0,1)',
+
 });
 
 
