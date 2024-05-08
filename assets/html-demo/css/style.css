@@ -7,7 +7,8 @@
     line-height: 58px;
     padding: 0 30px;
     margin-bottom: 80px;
-}
+    
+ }
 .demo1-about-1 .pbmt-hover-text .hover-effect::before, 
 .demo1-about-1 .pbmt-hover-text .hover-effect::after,
 .pbmit-text-rotation .pbmt-hover-text .hover-effect::before, 
@@ -1515,6 +1516,7 @@
 .development-agency-about1 .pbmit-custom-heading{
     font-size: 40px;
     line-height: 50px;
+    color: #000;;
 }
 .development-agency-about1 .pbmt-hover-text .hover-effect::before, 
 .development-agency-about1 .pbmt-hover-text .hover-effect::after,
