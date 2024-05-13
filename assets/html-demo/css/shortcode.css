@@ -1,50 +1,4 @@
-/******************************
 
-    INDEX:
-
-    00 - Section Title
-    01 - Icon Box
-    02 - Team Member
-    03 - Counter
-    04 - Service
-    05 - Projects
-    06 - Blog
-    07 - Testimonial
-    08 - Header
-    09 - Footer
-    10 - Title Bar
-    11 - Overlap Colomn
-    12 - Progress Bar
-    13 - Accordion
-    14 - Tab
-    15 - Circle Progress
-    16 - Static-box
-    17 - List Gourp
-    18 - Revolution
-    19 - Marquee
-    20 - Client
-    21 - Timeline
-    22 - Vertical Snap
-    23 - Img Animation
-    24 - Cursor
-    25 - Classes Calendar
-    26 - Tween Effect
-    27 - Flipbox
-    28 - Pricing Table
-    29 - Reel video
-    30 - Actionbox
-    31 - Awardbox
-    32 - Split-slide
-    33 - Spinner
-    34 - Mask
-    35 - Marquee Over Text
-    36 - Award Box
-
-******************************/
-
-/*----------------------------------------*/
-/*  00 - Section Title
-/*----------------------------------------*/
 .pbmit-globalcolor {
     color: var(--pbmit-global-color);
 }
@@ -3087,7 +3041,7 @@
 	color: var(--pbmit-white-color);
 }
 .pbmit-bg-color-blackish .pbmit-service-style-2 .pbmit-service-content p{
-	color: rgba( 255, 255, 255, 0.6);
+	color: white
 }
 .pbmit-bg-color-blackish .pbmit-service-style-2:hover .pbmit-service-title a,
 .pbmit-bg-color-blackish .pbmit-service-style-2:hover .pbminfotech-box-number,
@@ -10392,7 +10346,7 @@ body .nav-tabs{
 	z-index: 1;
 	left: 0;
 	right: 0;
-	background-color: var(--pbmit-blackish-color);
+	background-color:#00372C;
 	opacity: 0;
 	visibility: hidden;
 	transform: translateX(100%);
