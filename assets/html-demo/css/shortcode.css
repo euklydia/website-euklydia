@@ -4711,6 +4711,7 @@
 	.pbmit-element-portfolio-style-3 .pbminfotech-post-content{
 		width: 100%;
 		height: 100%;
+		margin-left: -10px;
 	}
 	.pbmit-element-portfolio-style-3 .pbminfotech-titlebox{
 		position: relative;
@@ -4753,9 +4754,7 @@
 		margin-bottom: 50px;
 		transform:unset!important;
 	}
-	.pbmit-element-portfolio-style-3 .pbminfotech-post-content:last-child {
-		margin-bottom: 0px;
-	}
+
 }
 @media(max-width:767px){
 	.pbmit-element-portfolio-style-3{
