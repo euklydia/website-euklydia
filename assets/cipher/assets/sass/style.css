@@ -1524,8 +1524,8 @@ body.dark-page .mouse-circle-mover-follow {
 @media (max-width: 1199px) {
   .ch-main-hero .ch-main-hero-text h2,
   .ch-main-hero-s2 .ch-main-hero-text h2 {
-    font-size: 70px;
-    line-height: 70px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 @media (max-width: 575px) {
