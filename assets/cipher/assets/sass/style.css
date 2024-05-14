@@ -1514,6 +1514,15 @@ body.dark-page .mouse-circle-mover-follow {
   margin-top: 20px;
   margin-bottom: 30px;
 }
+
+
+@media (max-width: 1800px) {
+  .ch-main-hero .ch-main-hero-text h2,
+  .ch-main-hero-s2 .ch-main-hero-text h2 {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
 @media (max-width: 1500px) {
   .ch-main-hero .ch-main-hero-text h2,
   .ch-main-hero-s2 .ch-main-hero-text h2 {
