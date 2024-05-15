@@ -28,13 +28,15 @@ function loadHeader() {
                                         <li><a href="whyus.html">Why us</a></li>
                                         <li><a href="UseCase.html">Case Study</a></li>
                                         <li><a href="iaimpact.html">AI Impact</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+
                                     </ul>
                                 </nav>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-6 text-left">
                             <div class="cp-header-area-right">
-                                <a href="contact.html" class="ch-btn-style-2" style="color: #00372C;"><span style="color: #00372C;">Contact</span></a>
+                                <a href="contact.html" class="ch-btn-style-2" style="color: #00372C;"><span style="color: #00372C;"> +33 06 19 09 14 48</span></a>
                             </div>
                         </div>
                         <div class="col-12">
@@ -62,7 +64,7 @@ function loadHeader() {
 function loadFooter() {
     const footerHTML = `
     <div id="footer-placeholder" class="footer-scope">
-    <footer class="footer-section style-2" style="background-color: #00372C; width: 100%; padding: 20px 0;">
+    <footer class="footer-section style-2" style="background-color: #00372C; width: 100%; padding:0px 0;">
         <div class="upper-footer" style="width: 100%; padding: 20px 15px;">
             <div class="container" style="max-width: 100%;">
                 <div class="row">
@@ -80,7 +82,7 @@ function loadFooter() {
                             <h3 style="color: white; font-family: 'Schibsted Grotesk', sans-serif;">Pages</h3>
                             </div>
                             <ul>
-                                <li><a href="" style="color: white;">Home</a></li>
+                                <li><a href="index.html" style="color: white;">Home</a></li>
                                 <li><a href="service.html" style="color: white;">Services</a></li>
                                 <li><a href="about.html" style="color: white;">About Us</a></li>
                                 <li><a href="iaimpact.html" style="color: white;">AI Impact</a></li>
@@ -96,7 +98,8 @@ function loadFooter() {
                                 <ul style="color: white;">
                                     <li style="color: white;"><i class="icon-Group-7042" style="color: white;"></i>+33 619 091 448</li>
                                     <li style="color: white;"><i class="icon-Group-7043" style="color: white;"></i>contact@euklydia.com</li>
-                                    <li style="color: white;"><i class="icon-Group-7044" style="color: white;"></i>Tunis: Rue Ibn nafis <br> zone industrielle Kram</li>
+                                    <li style="color: white;"><i class="icon-Group-7044" style="color: white;"></i>Tunis Tunisia <br>
+                                    Paris France</li>
                                 </ul>
                             </div>
                         </div>
