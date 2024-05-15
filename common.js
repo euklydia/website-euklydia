@@ -13,26 +13,28 @@ function loadHeader() {
                         </div>
                         <div class="col-xl-7 col-lg-7 col-md-1 col-1 text-right text-xl-right">
                             <div class="main-menu">
-                            <ul class="nav">
-                            <li><a href="./about">About Us</a></li>
-                            <li class="has-submenu"><a href="./service">Our Services</a>
-                                <ul class="sub-menu">
-                                    <li><a href="./branddiagnosis">AI Brand diagnosis and tracking</a></li>
-                                    <li><a href="./connecting-customers">Connecting with your target customers</a></li>
-                                    <li><a href="./socialmedia">Social media management and content creation</a></li>
-                                    <li><a href="./logodesign">Logo design and brand’s identity</a></li>
-                                    <li><a href="./web-creation">Web creation</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./whyus">Why us</a></li>
-                            <li><a href="./usecase">Case Study</a></li>
-                            <li><a href="./iaimpact">AI Impact</a></li>
-                        </ul>
+                                <nav id="mobile-menu">
+                                    <ul class="nav">
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li class="has-submenu"><a href="service.html">Our Services</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="branddiagnosis.html">AI Brand diagnosis and tracking</a></li>
+                                                <li><a href="Connecting customers.html">Connecting with your target customers</a></li>
+                                                <li><a href="socialmedia.html">Social media management and content creation</a></li>
+                                                <li><a href="logodesign.html">Logo design and brand’s identity</a></li>
+                                                <li><a href="Web creation.html">Web creation</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="whyus.html">Why us</a></li>
+                                        <li><a href="UseCase.html">Case Study</a></li>
+                                        <li><a href="iaimpact.html">AI Impact</a></li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-6 text-left">
                             <div class="cp-header-area-right">
-                                <a href="./contact" class="ch-btn-style-2" style="color: #00372C;"><span style="color: #00372C;">Contact</span></a>
+                                <a href="contact.html" class="ch-btn-style-2" style="color: #00372C;"><span style="color: #00372C;">Contact</span></a>
                             </div>
                         </div>
                         <div class="col-12">
