@@ -102,16 +102,16 @@ img {
 }
 
 .ptb-120 {
-  padding: 120px 0px;
+  padding: 50px 0px;
 }
 @media (max-width: 991px) {
   .ptb-120 {
-    padding: 90px 0;
+    padding: 30px 0;
   }
 }
 @media (max-width: 767px) {
   .ptb-120 {
-    padding: 80px 0;
+    padding: 40px 0;
   }
 }
 
@@ -2890,7 +2890,7 @@ body.dark-page .mouse-circle-mover-follow {
  ====================================*/
 .service-area,
 .service-area-s2 {
-  padding-top: 180px;
+  padding-top: 60px;
   padding-bottom: 90px;
 }
 @media (max-width: 991px) {
@@ -4271,7 +4271,7 @@ body.dark-page .mouse-circle-mover-follow {
  06. service-area-s2
  ====================================*/
 .service-area-s2 {
-  padding-top: 80px;
+  padding-top: 20px;
 }
 .service-area-s2 .service-wrap .service-item .service-text h3 {
   max-width: 230px;
@@ -6346,15 +6346,16 @@ body.violet-home .back-btn {
 }
 @media (min-width: 991px) {
   .about-page .about-area-s2 {
-    padding-bottom: 180px;
+    padding-bottom: 80px;
   }
 }
+
 
 /*--------------------------------------------------------------
 20. Service Page
 --------------------------------------------------------------*/
 .service-page .service-area {
-  padding-top: 120px;
+  padding-top: 40px;
 }
 @media (max-width: 991px) {
   .service-page .service-area {

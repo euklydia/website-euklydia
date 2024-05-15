@@ -1,0 +1,91 @@
+@media (min-width: 600px) and (max-width: 1250px) {
+    /* Hides the contact button on tablet to small desktop screens */
+    .cp-header-area-right a.ch-btn-style-2 {
+        display: none;
+    }
+
+    /* Adds a large margin below the header area on the same screen sizes */
+ 
+}
+
+
+.cp-header-area {
+    margin-bottom: 1500px !important;
+}
+
+
+
+.header-scope {
+    width: 100% !important;
+    height: 100px !important;
+
+}
+
+.header-scope .cp-header-area {
+    width: 100% !important;
+    height: 100% !important;
+    
+}
+
+.header-scope .menu-area {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.header-scope .container {
+    max-width: 100% !important;
+    height: 100% !important;
+}
+
+.header-scope .row {
+    height: 100% !important;
+}
+
+.header-scope .logo img {
+    max-height: 100% !important;
+}
+
+.header-scope .main-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-scope .nav > li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header-scope .nav > li > a {
+    color: #000; /* Adjust color as needed */
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.header-scope .nav .sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Adjust background color as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-scope .nav .has-submenu:hover .sub-menu {
+    display: block;
+}
+
+.header-scope .nav .sub-menu li {
+    display: block;
+}
+
+.header-scope .nav .sub-menu li a {
+    color: #000; /* Adjust color as needed */
+    padding: 10px 15px;
+}
+
+.header-scope .cp-header-area-right .ch-btn-style-2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000; /* Adjust background color as needed */
+    color: #fff; /* Adjust text color as needed */
+    text-decoration: none;
+    border-radius: 5px;
+}

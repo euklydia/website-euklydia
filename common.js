@@ -1,42 +1,38 @@
 function loadHeader() {
     const headerHTML = `
-    <header class="cp-header-area cp-header-style-2">
-        <div id="cp-header-sticky" class="menu-area">
-            <div class="container">
+    <div id="header-placeholder">
+    <header class="cp-header-area cp-header-style-2" style="width: 100%; height: 100px;">
+        <div id="cp-header-sticky" class="menu-area" style="width: 100%; height: 100%;">
+            <div class="container" style="max-width: 100%; height: 100%;">
                 <div class="second-menu">
-                    <div class="row align-items-center">
+                    <div class="row align-items-center" style="height: 100%;">
                         <div class="col-xl-2 col-lg-2 col-md-5 col-5">
                             <div class="logo">
-                                <a href="index.html"><img src="assets/html-demo/images/logo blanc.png" alt="logo"></a>
+                                <a href="index.html"><img src="assets/html-demo/images/logo blanc.png" alt="logo" style="max-height: 100%;"></a>
                             </div>
                         </div>
                         <div class="col-xl-7 col-lg-7 col-md-1 col-1 text-right text-xl-right">
                             <div class="main-menu">
-                                <nav id="mobile-menu">
-                                    <ul class="nav">
-                                        <li class="has-submenu">
-                                            <a href="index.html">Home</a>
-                                        </li>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li class="has-submenu"><a href="service.html">Our Services</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="branddiagnosis.html">AI Brand diagnosis and tracking</a></li>
-                                                <li><a href="Connecting customers.html">Connecting with your target customers</a></li>
-                                                <li><a href="socialmedia.html">Social media management and content creation</a></li>
-                                                <li><a href="logodesign.html">Logo design and brand’s identity</a></li>
-                                                <li><a href="Web creation.html">Web creation</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="whyus.html">Why us</a></li>
-                                        <li><a href="UseCase.html">Case Study</a></li>
-                                        <li><a href="iaimpact.html">AI Impact</a></li>
-                                    </ul>
-                                </nav>
+                            <ul class="nav">
+                            <li><a href="./about">About Us</a></li>
+                            <li class="has-submenu"><a href="./service">Our Services</a>
+                                <ul class="sub-menu">
+                                    <li><a href="./branddiagnosis">AI Brand diagnosis and tracking</a></li>
+                                    <li><a href="./connecting-customers">Connecting with your target customers</a></li>
+                                    <li><a href="./socialmedia">Social media management and content creation</a></li>
+                                    <li><a href="./logodesign">Logo design and brand’s identity</a></li>
+                                    <li><a href="./web-creation">Web creation</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./whyus">Why us</a></li>
+                            <li><a href="./usecase">Case Study</a></li>
+                            <li><a href="./iaimpact">AI Impact</a></li>
+                        </ul>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-6 text-left">
                             <div class="cp-header-area-right">
-                                <a href="contact.html" class="ch-btn-style-2"><span>Contact</span></a>
+                                <a href="./contact" class="ch-btn-style-2" style="color: #00372C;"><span style="color: #00372C;">Contact</span></a>
                             </div>
                         </div>
                         <div class="col-12">
@@ -47,6 +43,9 @@ function loadHeader() {
             </div>
         </div>
     </header>
+</div> 
+
+
     `;
     document.getElementById('header-placeholder').innerHTML = headerHTML;
 
@@ -60,38 +59,23 @@ function loadHeader() {
 
 function loadFooter() {
     const footerHTML = `
-    <footer class="footer-section style-2" style="background-color: #00372C;">
-        <div class="upper-footer">
-            <div class="container">
+    <div id="footer-placeholder" class="footer-scope">
+    <footer class="footer-section style-2" style="background-color: #00372C; width: 100%; padding: 20px 0;">
+        <div class="upper-footer" style="width: 100%; padding: 20px 15px;">
+            <div class="container" style="max-width: 100%;">
                 <div class="row">
                     <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
                         <div class="widget about-widget">
-                            <div class="logo widget-about">
-                                <img src="assets/logo blanc.png" alt="logo">
+                            <div >
+                            <img src="assets/html-demo/images/logo blanc.png" alt="logo" style="width: 210px; height: 55px;">
                             </div>
                             <p style="color: white;">Your AI marketing agency that leads the digital revolution worldwide by merging artificial intelligence with human creativity</p>
-                            <div class="widget social-widget p-0">
-                                <ul class="pbmit-social-links">
-                                    <li class="pbmit-social-li pbmit-social-facebook">
-                                        <a href="#" target="_blank"><span><i class="pbmit-base-icon-facebook-f" style="color: #00E37D;"></i></span></a>
-                                    </li>
-                                    <li class="pbmit-social-li pbmit-social-twitter">
-                                        <a href="#" target="_blank"><span><i class="pbmit-base-icon-twitter" style="color: #00E37D;"></i></span></a>
-                                    </li>
-                                    <li class="pbmit-social-li pbmit-social-linkedin">
-                                        <a href="#" target="_blank"><span><i class="pbmit-base-icon-linkedin-in" style="color: #00E37D;"></i></span></a>
-                                    </li>
-                                    <li class="pbmit-social-li pbmit-social-instagram">
-                                        <a href="#" target="_blank"><span><i class="pbmit-base-icon-instagram" style="color: #00E37D;"></i></span></a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                     <div class="col col-xl-3 col-lg-2 col-md-6 col-sm-12 col-12">
                         <div class="widget link-widget">
                             <div class="widget-title">
-                                <h3 style="color: white;">Pages</h3>
+                            <h3 style="color: white; font-family: 'Schibsted Grotesk', sans-serif;">Pages</h3>
                             </div>
                             <ul>
                                 <li><a href="" style="color: white;">Home</a></li>
@@ -104,7 +88,7 @@ function loadFooter() {
                     <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
                         <div class="widget contact-widget">
                             <div class="widget-title">
-                                <h3 style="color: white;">Address</h3>
+                            <h3 style="color: white; font-family: 'Schibsted Grotesk', sans-serif;">Adress</h3>
                             </div>
                             <div class="contact-ft">
                                 <ul style="color: white;">
@@ -118,7 +102,7 @@ function loadFooter() {
                     <div class="col col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                         <div class="widget subscribe">
                             <div class="widget-title">
-                                <h3 style="color: white;">Get Free Estimate</h3>
+                            <h3 style="color: white; font-family: 'Schibsted Grotesk', sans-serif;"> Get Free Estimate</h3>
                             </div>
                             <form action="#">
                                 <div class="form-field">
@@ -131,8 +115,8 @@ function loadFooter() {
                 </div>
             </div>
         </div>
-        <div class="lower-footer">
-            <div class="container">
+        <div class="lower-footer" style="width: 100%; padding: 10px 15px;">
+            <div class="container" style="max-width: 100%;">
                 <div class="row align-items-center">
                     <div class="col col-lg-6 col-12">
                         <div class="copy-right">
@@ -150,6 +134,9 @@ function loadFooter() {
             </div>
         </div>
     </footer>
+</div>
+
+
     `;
     document.getElementById('footer-placeholder').innerHTML = footerHTML;
 }
