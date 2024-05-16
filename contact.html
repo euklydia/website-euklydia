@@ -40,27 +40,23 @@
     <script type="text/javascript">
         (function() {
             // Initialize EmailJS with your user ID
-            emailjs.init('YgLPYXu6N-Q-xmAK6');
+            emailjs.init('84E1Ksf4WWeAsj1VR');
         })();
     </script>
     <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // Send the form using EmailJS
-                emailjs.sendForm('service_smyckj3', 'template_9dobc3j', this)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                        // Inject the success message
-                        const successMessage = document.createElement('p');
-                        successMessage.textContent = 'Well received';
-                        successMessage.style.color = 'green'; // Optional: style the message
-                        this.appendChild(successMessage);
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    });
+window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        emailjs.sendForm('service_sc2kq0c', 'template_g7e4zld', this)
+            .then(function(response) {
+                console.log('SUCCESS!', response);
+                // Optionally, display a success message
+            }, function(error) {
+                console.log('FAILED...', error);
+                // Optionally, display an error message
             });
-        }
+    });
+}
     </script>
 </head>
 <body>
@@ -82,7 +78,7 @@
                                 <div class="breadcumb-wrap">
                                     <h2>Contact</h2>
                                     <ol>
-                                        <li><a href="index.html"><i class="icon-36"></i> Home</a></li>
+                                        <li><a href="./"><i class="icon-36"></i> Home</a></li>
                                         <li>Contact</li>
                                     </ol>
                                 </div>
@@ -110,34 +106,29 @@
                                     <form class="contact-activation" id="contact-form" novalidate="novalidate">
                                         <div class="row">
                                             <div class="col-md-6 col-12 form-field">
-                                                <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Your first Name" autocomplete="name">
+                                                <input type="text" class="form-control" name="user_firstname" placeholder="Your First Name">
                                             </div>
                                             <div class="col-md-6 col-12 form-field">
-                                                <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Your last Name" autocomplete="name">
+                                                <input type="text" class="form-control" name="user_lastname" placeholder="Your Last Name">
                                             </div>
                                             <div class="col-md-6 col-12 form-field">
-                                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+                                                <input type="email" class="form-control" name="user_email" placeholder="Your Email">
                                             </div>
                                             <div class="col-md-6 col-12 form-field">
-                                                <input type="text" class="form-control" name="Company" id="Company" placeholder="Company">
+                                                <input type="text" class="form-control" name="user_company" placeholder="Company">
                                             </div>
                                             <div class="col-md-12 col-12 form-field">
-                                                <textarea class="form-control" name="note" id="note" placeholder="Message here.."></textarea>
+                                                <textarea class="form-control" name="message" placeholder="Message here.."></textarea>
                                             </div>
                                             <div class="col-md-12 col-12">
                                                 <div class="submit-area">
                                                     <button type="submit" class="ch-btn-style-2"><span>Send Now</span></button>
-                                                    <div id="loader">
-                                                        <i class="ti-reload"></i>
-                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="clearfix error-handling-messages">
-                                            <div id="success">Thank you! Message Sent</div>
-                                            <div id="error">Error occurred while sending email. Please try again later.</div>
+                                    
                                         </div>
                                     </form>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -201,35 +192,31 @@
                                         <h2 class="site-split-text ch-split-in-right">Be part of our team</h2>
                                         <p>If you are passionate, talented, and looking for a place where you can grow your career, we want to hear from you!</p>
                                     </div>
-                                    <form class="contact-activation" id="hiring-form" novalidate="novalidate">
+                                    <form class="contact-activation" id="contact-form" novalidate="novalidate">
                                         <div class="row">
                                             <div class="col-md-6 col-12 form-field">
-                                                <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Your first Name" autocomplete="name">
+                                                <input type="text" class="form-control" name="user_firstname" id="firstname" placeholder="Your First Name" autocomplete="name">
                                             </div>
                                             <div class="col-md-6 col-12 form-field">
-                                                <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Your last Name" autocomplete="name">
+                                                <input type="text" class="form-control" name="user_lastname" id="lastname" placeholder="Your Last Name" autocomplete="name">
                                             </div>
                                             <div class="col-md-6 col-12 form-field">
-                                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+                                                <input type="email" class="form-control" name="user_email" id="email" placeholder="Your Email">
                                             </div>
                                             <div class="col-md-6 col-12 form-field">
-                                                <input type="text" class="form-control" name="field" id="field" placeholder="Field">
+                                                <input type="text" class="form-control" name="user_company" id="Company" placeholder="Company">
+                                            </div>
+                                            <div class="col-md-12 col-12 form-field">
+                                                <textarea class="form-control" name="message" id="note" placeholder="Message here.."></textarea>
                                             </div>
                                             <div class="col-md-12 col-12">
                                                 <div class="submit-area">
-                                                    <button type="submit" class="ch-btn-style-2"><span>Join us</span></button>
-                                                    <div id="loader">
-                                                        <i class="ti-reload"></i>
-                                                    </div>
+                                                    <button type="submit" class="ch-btn-style-2"><span>Send Now</span></button>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="clearfix error-handling-messages">
-                                            <div id="success">Thank you! Message Sent</div>
-                                            <div id="error">Error occurred while sending email. Please try again later.</div>
-                                        </div>
                                     </form>
-                                </div>
+                                                                    </div>
                             </div>
                             <div class="col col-lg-5 col-12">
                                 <div class="contact-title"></div>

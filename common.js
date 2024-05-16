@@ -81,9 +81,9 @@ function loadFooter() {
                             <h3 style="color: white; font-family: 'Schibsted Grotesk', sans-serif;">Pages</h3>
                             </div>
                             <ul>
-                                <li><a href="index.html" style="color: white;">Home</a></li>
+                                <li><a href="./" style="color: white;">Home</a></li>
                                 <li><a href="./service" style="color: white;">Services</a></li>
-                                <li><a href="about.html" style="color: white;">About Us</a></li>
+                                <li><a href="./about" style="color: white;">About Us</a></li>
                                 <li><a href="./iaimpact" style="color: white;">AI Impact</a></li>
                             </ul>
                         </div>
@@ -124,7 +124,7 @@ function loadFooter() {
                 <div class="row align-items-center">
                     <div class="col col-lg-6 col-12">
                         <div class="copy-right">
-                            <p class="copyright" style="color: aliceblue;">© 2024 <a href="index.html" style="color: #00E37D;">Euklydia</a>, All Rights Reserved.</p>
+                            <p class="copyright" style="color: aliceblue;">© 2024 <a href="./" style="color: #00E37D;">Euklydia</a>, All Rights Reserved.</p>
                         </div>
                     </div>
                     <div class="col col-lg-6 col-12">
