@@ -4598,16 +4598,7 @@
 .pbmit-element-portfolio-style-3 .pbmit-portfolio-content{
 	position: relative;
 } 
-.pbmit-element-portfolio-style-3 .pbmit-portfolio-content:after{
-	position: absolute;
-	content: '';
-	left: 0;
-	right: auto;
-	width: 130px;
-	height: 1px;
-	background-color: var(--pbmit-white-color);
-	top: 150px;
-}
+
 .pbmit-element-portfolio-style-3  .project-number-slider{
 	position: absolute;
 	z-index: 10;

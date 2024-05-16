@@ -33,11 +33,7 @@ function loadHeader() {
                                 </nav>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-6 text-left">
-                            <div class="cp-header-area-right">
-                                <a href="./contact" class="ch-btn-style-2" style="color: #00372C;"><span style="color: #00372C;"> +33 06 19 09 14 48</span></a>
-                            </div>
-                        </div>
+                       
                         <div class="col-12">
                             <div class="mobile-menu"></div>
                         </div>
