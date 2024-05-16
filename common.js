@@ -8,35 +8,34 @@ function loadHeader() {
                     <div class="row align-items-center" style="height: 100%;">
                         <div class="col-xl-2 col-lg-2 col-md-5 col-5">
                             <div class="logo">
-                                <a href="index.html"><img src="assets/html-demo/images/logo blanc.png" alt="logo" style="max-height: 100%;"></a>
+                                <a href="./"><img src="./assets/html-demo/images/logo blanc.png" alt="logo" style="max-height: 100%;"></a>
                             </div>
                         </div>
                         <div class="col-xl-7 col-lg-7 col-md-1 col-1 text-right text-xl-right">
                             <div class="main-menu">
                                 <nav id="mobile-menu">
                                     <ul class="nav">
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li class="has-submenu"><a href="service.html">Our Services</a>
+                                        <li><a href="./about">About Us</a></li>
+                                        <li class="has-submenu"><a href="./service">Our Services</a>
                                             <ul class="sub-menu">
-                                                <li><a href="branddiagnosis.html">AI Brand diagnosis and tracking</a></li>
-                                                <li><a href="Connecting customers.html">Connecting with your target customers</a></li>
-                                                <li><a href="socialmedia.html">Social media management and content creation</a></li>
-                                                <li><a href="logodesign.html">Logo design and brand’s identity</a></li>
-                                                <li><a href="Web creation.html">Web creation</a></li>
+                                                <li><a href="./branddiagnosis">AI Brand diagnosis and tracking</a></li>
+                                                <li><a href="./Connecting customers">Connecting with your target customers</a></li>
+                                                <li><a href="./socialmedia">Social media management and content creation</a></li>
+                                                <li><a href="./logodesign">Logo design and brand’s identity</a></li>
+                                                <li><a href="./Web creation">Web creation</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="whyus.html">Why us</a></li>
-                                        <li><a href="UseCase.html">Case Study</a></li>
-                                        <li><a href="iaimpact.html">AI Impact</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-
+                                        <li><a href="./whyus">Why us</a></li>
+                                        <li><a href="./UseCase">Case Study</a></li>
+                                        <li><a href="./iaimpact">AI Impact</a></li>
+                                        <li><a href="./contact">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-6 text-left">
                             <div class="cp-header-area-right">
-                                <a href="contact.html" class="ch-btn-style-2" style="color: #00372C;"><span style="color: #00372C;"> +33 06 19 09 14 48</span></a>
+                                <a href="./contact" class="ch-btn-style-2" style="color: #00372C;"><span style="color: #00372C;"> +33 06 19 09 14 48</span></a>
                             </div>
                         </div>
                         <div class="col-12">
