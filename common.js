@@ -83,7 +83,7 @@ function loadFooter() {
                             <ul>
                                 <li><a href="index.html" style="color: white;">Home</a></li>
                                 <li><a href="./service" style="color: white;">Services</a></li>
-                                <li><a href="about.html" style="color: white;">About Us</a></li>
+                                <li><a href="./about" style="color: white;">About Us</a></li>
                                 <li><a href="./iaimpact" style="color: white;">AI Impact</a></li>
                             </ul>
                         </div>
