@@ -82,9 +82,9 @@ function loadFooter() {
                             </div>
                             <ul>
                                 <li><a href="index.html" style="color: white;">Home</a></li>
-                                <li><a href="service.html" style="color: white;">Services</a></li>
+                                <li><a href="./service" style="color: white;">Services</a></li>
                                 <li><a href="about.html" style="color: white;">About Us</a></li>
-                                <li><a href="iaimpact.html" style="color: white;">AI Impact</a></li>
+                                <li><a href="./iaimpact" style="color: white;">AI Impact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -129,9 +129,9 @@ function loadFooter() {
                     </div>
                     <div class="col col-lg-6 col-12">
                         <ul class="lower-footer-link">
-                            <li><a href="contact.html" style="color: aliceblue;">Terms &amp; Conditions</a></li>
-                            <li><a href="contact.html" style="color: aliceblue;">Privacy Policy</a></li>
-                            <li><a href="contact.html" style="color: aliceblue;">Contact Us</a></li>
+                            <li><a href="./contact" style="color: aliceblue;">Terms &amp; Conditions</a></li>
+                            <li><a href="./contact" style="color: aliceblue;">Privacy Policy</a></li>
+                            <li><a href="./contact" style="color: aliceblue;">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
