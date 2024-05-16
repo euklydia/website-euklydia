@@ -1,28 +1,33 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="DesignCurved">
     <link rel="shortcut icon" type="image/png" href="assets/cipher/assets/images/favicon.png">
-    <title> Contact us</title>
-<script src="common.js" defer></script> 
-    <link rel="stylesheet" href="assets/html-demo/css/footer.css" >
-    <link rel="stylesheet" href="assets/html-demo/css/header.css" >
+    <title>Contact Us</title>
 
-    <!--**************** Icon Css ****************-->
+
+    <script src="common.js" defer></script> 
+
+    <link rel="stylesheet" href="assets/html-demo/css/footer.css">
+    <link rel="stylesheet" href="assets/html-demo/css/header.css">
+    <!-- Icon Css -->
+
     <link href="assets/cipher/assets/css/themify-icons.css" rel="stylesheet">
     <link href="assets/cipher/assets/css/icomoon.css" rel="stylesheet">
-    <!--**************** bootstrap Css ****************-->
+    <!-- Bootstrap Css -->
     <link href="assets/cipher/assets/css/bootstrap.min.css" rel="stylesheet">
-    <!--**************** animate Css ****************-->
+    <!-- Animate Css -->
     <link href="assets/cipher/assets/css/animate.css" rel="stylesheet">
-    <!--**************** All Slider Css ****************-->
+    <!-- Slider Css -->
     <link href="assets/cipher/assets/css/owl.carousel.css" rel="stylesheet">
     <link href="assets/cipher/assets/css/owl.theme.css" rel="stylesheet">
     <link href="assets/cipher/assets/css/slick.css" rel="stylesheet">
     <link href="assets/cipher/assets/css/slick-theme.css" rel="stylesheet">
     <link href="assets/cipher/assets/css/swiper.min.css" rel="stylesheet">
-    <!--**************** Others Plugin Css ****************-->
+    <!-- Others Plugin Css -->
     <link href="assets/cipher/assets/css/meanmenu.css" rel="stylesheet">
     <link href="assets/cipher/assets/css/nice-select.css" rel="stylesheet">
     <link href="assets/cipher/assets/css/owl.transitions.css" rel="stylesheet">
@@ -30,31 +35,41 @@
     <link href="assets/cipher/assets/css/jquery.fancybox.css" rel="stylesheet">
     <link href="assets/cipher/assets/css/odometer-theme-default.css" rel="stylesheet">
     <link href="assets/cipher/assets/sass/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/html-demo/css/pbminfotech-base-icons.css" >
+    <link rel="stylesheet" href="assets/html-demo/css/pbminfotech-base-icons.css">
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Initialize EmailJS with your user ID
+            emailjs.init('YgLPYXu6N-Q-xmAK6');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // Send the form using EmailJS
+                emailjs.sendForm('service_smyckj3', 'template_9dobc3j', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
-
 <body>
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init('service_jrm0v4l'); // Replace 'your-user-id' with your actual user ID from EmailJS
-   })();
-</script>
 
     <div id="header-placeholder"></div>
 
     <!-- start page-wrap -->
     <div class="page-wrap">
         <!-- start preloader -->
-      
         <!-- end preloader -->
         <div class="smooth-scrool-animate" id="smooth-animate"></div>
         <div id="smooth-page-wrapper">
             <div id="smooth-page-content">
-
-                <!-- end of header -->
-
                 <!-- start page-title -->
                 <section class="page-title">
                     <div class="container">
@@ -81,23 +96,14 @@
                                 <div class="contact-title">
                                     <div class="ch-top-title-s3">
                                         <span>GET IN TOUCH</span>
-                                        <h2 class="site-split-text ch-split-in-right">Elevate your brand with Euklydia
-                                        </h2>
-                                        <p>Feel free to reach out to us <br> we're just a message away and ready to assist you with your needs!
-
-
-
-
-
-
-                                        </p>
+                                        <h2 class="site-split-text ch-split-in-right">Elevate your brand with Euklydia</h2>
+                                        <p>Feel free to reach out to us <br> we're just a message away and ready to assist you with your needs!</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col col-lg-7 col-12">
-                                <div class="contact-form-area"  
-                              >
-                                    <form  class="contact-activation" id="contact-form-mejor" novalidate="novalidate">
+                                <div class="contact-form-area">
+                                    <form class="contact-activation" id="contact-form" novalidate="novalidate">
                                         <div class="row">
                                             <div class="col-md-6 col-12 form-field">
                                                 <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Your first Name" autocomplete="name">
@@ -111,13 +117,12 @@
                                             <div class="col-md-6 col-12 form-field">
                                                 <input type="text" class="form-control" name="Company" id="Company" placeholder="Company">
                                             </div>
-                                             <div class="col-md-12 col-12 form-field">
+                                            <div class="col-md-12 col-12 form-field">
                                                 <textarea class="form-control" name="note" id="note" placeholder="Message here.."></textarea>
                                             </div>
                                             <div class="col-md-12 col-12">
                                                 <div class="submit-area">
-                                                    <button type="submit" class="ch-btn-style-2"><span>Send
-                                                            Now</span></button>
+                                                    <button type="submit" class="ch-btn-style-2"><span>Send Now</span></button>
                                                     <div id="loader">
                                                         <i class="ti-reload"></i>
                                                     </div>
@@ -125,16 +130,13 @@
                                             </div>
                                         </div>
                                         <div class="clearfix error-handling-messages">
-                                            <div id="success">Thank you! Massage Sended</div>
-                                            <div id="error"> Error occurred while sending email. Please try again
-                                                later. </div>
+                                            <div id="success">Thank you! Message Sent</div>
+                                            <div id="error">Error occurred while sending email. Please try again later.</div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
-
-
                         <div class="office-info ptb-120">
                             <div class="row">
                                 <div class="col col-xl-4 col-lg-6 col-md-6 col-12">
@@ -146,8 +148,7 @@
                                         </div>
                                         <div class="office-info-text">
                                             <h2>Address</h2>
-                                            <p>Tunis, Tunisia <br>
-                                                Paris France</p>
+                                            <p>Tunis, Tunisia <br>Paris, France</p>
                                         </div>
                                     </div>
                                 </div>
@@ -183,64 +184,87 @@
                     </div> <!-- end container -->
                 </section>
                 <!-- end contact-pg-section -->
-
-                <!-- start of footer-section -->
+                
+                <!-- Hiring Section -->
+                <section class="contact-pg-section section-padding" style="margin-top: -100px;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col col-lg-7 col-12">
+                                <div class="contact-form-area">
+                                    <br>
+                                    <div class="ch-top-title-s3">
+                                        <span>Hiring</span>
+                                        <h2 class="site-split-text ch-split-in-right">Be part of our team</h2>
+                                        <p>If you are passionate, talented, and looking for a place where you can grow your career, we want to hear from you!</p>
+                                    </div>
+                                    <form class="contact-activation" id="hiring-form" novalidate="novalidate">
+                                        <div class="row">
+                                            <div class="col-md-6 col-12 form-field">
+                                                <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Your first Name" autocomplete="name">
+                                            </div>
+                                            <div class="col-md-6 col-12 form-field">
+                                                <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Your last Name" autocomplete="name">
+                                            </div>
+                                            <div class="col-md-6 col-12 form-field">
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+                                            </div>
+                                            <div class="col-md-6 col-12 form-field">
+                                                <input type="text" class="form-control" name="field" id="field" placeholder="Field">
+                                            </div>
+                                            <div class="col-md-12 col-12">
+                                                <div class="submit-area">
+                                                    <button type="submit" class="ch-btn-style-2"><span>Join us</span></button>
+                                                    <div id="loader">
+                                                        <i class="ti-reload"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix error-handling-messages">
+                                            <div id="success">Thank you! Message Sent</div>
+                                            <div id="error">Error occurred while sending email. Please try again later.</div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col col-lg-5 col-12">
+                                <div class="contact-title"></div>
+                                <img src="assets/hiring.jpg" alt="">
+                                <br>
+                            </div>
+                        </div>
+                        <br>
+                    </div> <!-- end container -->
+                </section>
+                <!-- end Hiring Section -->
+                
+                <!-- Footer Section -->
                 <div id="footer-placeholder" class="footer-scope">
-                    
-                    <footer class="footer-section style-2">
-                    </footer>
+                    <footer class="footer-section style-2"></footer>
                 </div>
-                    <!-- footer -->
-        
-              </div>
-                 <!-- footer End -->
-                 <div class="pbmit-progress-wrap">
-                    <svg class="pbmit-progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
-                    </svg>
-                 </div>
+                <!-- Footer End -->
                 <!-- end of site-footer-section -->
             </div>
         </div>
 
         <!-- mouse-mover -->
-        <div class="mouse-circle-mover"></div>
-        <div class="mouse-circle-mover-follow"></div>
-
     </div>
     <!-- end of page-wrap -->
 
-    <!-- All JavaScript files Here
-    ********************************************* -->
+    <!-- All JavaScript files Here -->
     <!-- jquery Plugins -->
     <script src="assets/cipher/assets/js/jquery.min.js"></script>
-    <!--**************** Bootstrap Plugins ****************-->
+    <!-- Bootstrap Plugins -->
     <script src="assets/cipher/assets/js/bootstrap.bundle.min.js"></script>
-    <!--**************** modernizr Plugins ****************-->
+    <!-- Modernizr Plugins -->
     <script src="assets/cipher/assets/js/modernizr.custom.js"></script>
-    <!--**************** our-plugin-bundle ****************-->
+    <!-- our-plugin-bundle -->
     <script src="assets/cipher/assets/js/our-plugin-bundle.js"></script>
-    <!--**************** mobail meanmenu ****************-->
+    <!-- Mobail meanmenu -->
     <script src="assets/cipher/assets/js/jquery.meanmenu.min.js"></script>
-    <!--**************** all script file this template ****************-->
+    <!-- all script file this template -->
     <script src="assets/cipher/assets/js/all-gsap-activation.js"></script>
     <script src="assets/cipher/assets/js/script.js"></script>
-    <script>
-        document.getElementById('contact-form-mejor').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-        
-            emailjs.sendForm('your_service_id', 'service_jrm0v4l', this)
-                .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    document.getElementById('success').style.display = 'block';
-                    document.getElementById('error').style.display = 'none';
-                }, function(error) {
-                    console.log('FAILED...', error);
-                    document.getElementById('error').style.display = 'block';
-                    document.getElementById('success').style.display = 'none';
-                });
-        });
-        </script>
-        
 
-</body></html>
+</body>
+</html>
