@@ -63,6 +63,15 @@ body {
 	}
 }
 
+@media (max-width: 1200px) {
+    .pbmit-element-portfolio-style-3 .pbminfotech-post-content {
+        flex: 0 0 auto;
+        margin-right: 20px;
+        height: auto;
+        align-items: center;
+    }
+}
+
 @media (max-width:1366px) {
 	/* Header */
 	.header-style-7 .pbmit-header-button{
@@ -1053,8 +1062,8 @@ body {
 		padding-bottom:70px;
 	}
 	.section-lgx{ 
-		padding-top: 80px; 
-		padding-bottom:80px;
+		padding-top: 60px; 
+		padding-bottom:5px;
 	}
 	.section-lgt{ 
 		padding-top: 80px; 
@@ -1523,7 +1532,7 @@ body {
 	}
 	.section-lgx {
 		padding-top: 60px;
-		padding-bottom: 60px;
+		padding-bottom: 10px;
 	}
 	.section-mdb{
 		padding-bottom:30px;
@@ -2256,3 +2265,13 @@ body {
 	}
 }
 
+@media (max-width: 990px) {
+    .pbmit-element-portfolio-style-3 .pbmit-element-posts-wrapper {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        align-items: center;
+        padding: 0 40px;
+    }
+}

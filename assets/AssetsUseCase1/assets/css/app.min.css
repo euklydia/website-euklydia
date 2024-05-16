@@ -8465,6 +8465,14 @@ button.toast-close-button {
   }
 }
 
+@media (max-width: 994px) {
+  .nav {
+      display: block;
+      border: none;
+  }
+}
+
+
 @media all and (min-width: 241px) and (max-width: 480px) {
   #toast-container > div {
     padding: 8px 8px 8px 50px;
@@ -12313,3 +12321,5 @@ body.dark.horizontal-navigation .navigation {
 .cp-header-style-3 .main-menu ul > li > a:hover {
   color: #A66EFF;
 }
+
+

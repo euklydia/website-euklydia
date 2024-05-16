@@ -7,6 +7,7 @@
     <title> Contact us</title>
 <script src="common.js" defer></script> 
     <link rel="stylesheet" href="assets/html-demo/css/footer.css" >
+    <link rel="stylesheet" href="assets/html-demo/css/header.css" >
 
     <!--**************** Icon Css ****************-->
     <link href="assets/cipher/assets/css/themify-icons.css" rel="stylesheet">
@@ -34,6 +35,13 @@
 </head>
 
 <body>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init('service_jrm0v4l'); // Replace 'your-user-id' with your actual user ID from EmailJS
+   })();
+</script>
+
     <div id="header-placeholder"></div>
 
     <!-- start page-wrap -->
@@ -87,8 +95,7 @@
                                 </div>
                             </div>
                             <div class="col col-lg-7 col-12">
-                                <div class="contact-form-area"   action="https://formspree.io/f/mzbnwann"
-                                method="POST"
+                                <div class="contact-form-area"  
                               >
                                     <form  class="contact-activation" id="contact-form-mejor" novalidate="novalidate">
                                         <div class="row">
@@ -167,7 +174,7 @@
                                         <div class="office-info-text">
                                             <h2>Call us</h2>
                                             <br>
-                                            <p>++33 06 19 09 14 48</p>
+                                            <p>+33 06 19 09 14 48</p>
                                         </div>
                                     </div>
                                 </div>
@@ -218,6 +225,22 @@
     <!--**************** all script file this template ****************-->
     <script src="assets/cipher/assets/js/all-gsap-activation.js"></script>
     <script src="assets/cipher/assets/js/script.js"></script>
-
+    <script>
+        document.getElementById('contact-form-mejor').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+        
+            emailjs.sendForm('your_service_id', 'service_jrm0v4l', this)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    document.getElementById('success').style.display = 'block';
+                    document.getElementById('error').style.display = 'none';
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    document.getElementById('error').style.display = 'block';
+                    document.getElementById('success').style.display = 'none';
+                });
+        });
+        </script>
+        
 
 </body></html>

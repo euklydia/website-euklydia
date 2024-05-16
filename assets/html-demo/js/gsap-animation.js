@@ -1238,45 +1238,35 @@ function pbmit_active_hover() {
 }
 
 function pbmit_verticel_layered_pinning() {
-	var pbmit_var = $('.pbmit-element-portfolio-style-15');
+    var pbmit_var = $('.pbmit-element-portfolio-style-15');
     if (!pbmit_var.length) {
         return;
     }
-	ScrollTrigger.matchMedia({
-		"(min-width: 992px)": function() {
 
-			let pbmitpanels = gsap.utils.toArray(".pbmit-element-portfolio-style-15 .pbminfotech-box-content");
-			const spacer = 0;
-		
-			let pbmitheight = pbmitpanels[0].offsetHeight;
-			/*let tops = pbmitpanels.map(pbmitpanel => ScrollTrigger.create({trigger: pbmitpanel, start: "top top"}));
-			console.log(pbmitheight);*/
-			pbmitpanels.forEach((pbmitpanel, i) => {
-			ScrollTrigger.create({
-				trigger: pbmitpanel, 
-				start: () => "top top", 
-				//end: () => "+=" + pbmitheight,
-				endTrigger: '.pbmit-element-portfolio-style-15', 
-				end: `bottom top+=${pbmitheight + (pbmitpanels.length * spacer)}`,
-				pin: true, 
-				pinSpacing: false, 
-			});
-			/*ScrollTrigger.create({
-				trigger: pbmitpanel,
-				start: () => "top top",
-				endTrigger: '.pbmit-element-portfolio-style-15',
-				end: `bottom top+=${200 + (pbmitpanel.length)}`,
-				pin: true,
-				pinSpacing: false, 
-				invalidateOnRefresh: true,
-			});*/
-			});
-		},
-		"(max-width:992px)": function() {
-			ScrollTrigger.getAll().forEach(pbmitpanels => pbmitpanels.kill(true));
-		}
-	});
- }
+    ScrollTrigger.matchMedia({
+        // Applies to all devices
+        "all": function() {
+            let pbmitpanels = gsap.utils.toArray(".pbmit-element-portfolio-style-15 .pbminfotech-box-content");
+            const spacer = 0;
+
+            // Set pinning only if device width is more than 992px
+            let pinningEnabled = window.innerWidth > 992;
+            let pbmitheight = pbmitpanels[0].offsetHeight;
+
+            pbmitpanels.forEach((pbmitpanel, i) => {
+                ScrollTrigger.create({
+                    trigger: pbmitpanel,
+                    start: () => "top top",
+                    endTrigger: '.pbmit-element-portfolio-style-15',
+                    end: () => pinningEnabled ? `bottom top+=${pbmitheight + (pbmitpanels.length * spacer)}` : "bottom bottom",
+                    pin: pinningEnabled, 
+                    pinSpacing: false
+                });
+            });
+        }
+    });
+}
+
  
  
  
