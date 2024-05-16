@@ -10219,7 +10219,7 @@ body.dark {
 }
 
 body.dark a:not(.btn):not(.link-1) {
-  color: #1C3F39;
+  color: white;
 }
 
 body.dark a:not(.btn):not(.link-1):hover {
