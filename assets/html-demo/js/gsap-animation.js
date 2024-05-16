@@ -1244,25 +1244,24 @@ function pbmit_verticel_layered_pinning() {
     }
 
     ScrollTrigger.matchMedia({
-        // Applies to all devices
-        "all": function() {
+        "(min-width: 992px)": function() {
             let pbmitpanels = gsap.utils.toArray(".pbmit-element-portfolio-style-15 .pbminfotech-box-content");
             const spacer = 0;
-
-            // Set pinning only if device width is more than 992px
-            let pinningEnabled = window.innerWidth > 992;
             let pbmitheight = pbmitpanels[0].offsetHeight;
 
             pbmitpanels.forEach((pbmitpanel, i) => {
                 ScrollTrigger.create({
                     trigger: pbmitpanel,
-                    start: () => "top top",
+                    start: "top top",
                     endTrigger: '.pbmit-element-portfolio-style-15',
-                    end: () => pinningEnabled ? `bottom top+=${pbmitheight + (pbmitpanels.length * spacer)}` : "bottom bottom",
-                    pin: pinningEnabled, 
-                    pinSpacing: false
+                    end: () => `bottom top+=${pbmitheight + (pbmitpanels.length * spacer)}`,
+                    pin: true,
+                    pinSpacing: false,
                 });
             });
+        },
+        "(max-width: 991px)": function() {
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill(true));
         }
     });
 }

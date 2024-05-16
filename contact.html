@@ -8,7 +8,6 @@
     <link rel="shortcut icon" type="image/png" href="assets/cipher/assets/images/favicon.png">
     <title>Contact Us</title>
 
-
     <script src="common.js" defer></script> 
 
     <link rel="stylesheet" href="assets/html-demo/css/footer.css">
@@ -52,6 +51,11 @@
                 emailjs.sendForm('service_smyckj3', 'template_9dobc3j', this)
                     .then(() => {
                         console.log('SUCCESS!');
+                        // Inject the success message
+                        const successMessage = document.createElement('p');
+                        successMessage.textContent = 'Well received';
+                        successMessage.style.color = 'green'; // Optional: style the message
+                        this.appendChild(successMessage);
                     }, (error) => {
                         console.log('FAILED...', error);
                     });

@@ -46,7 +46,7 @@ a.meanmenu-reveal {
     width: 22px;
 }
 .mean-container a.meanmenu-reveal>span {
-    margin-top: -3px;
+    margin: 3px;
 }
 .mean-container a.meanmenu-reveal>span span::before {
     position: absolute;
