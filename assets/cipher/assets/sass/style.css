@@ -2907,7 +2907,7 @@ body.dark-page .mouse-circle-mover-follow {
 }
 .service-area .service-item,
 .service-area-s2 .service-item {
-  background: #FBF3F2;
+  background: #00372C;
   padding: 75px 40px 55px;
   transform: translateY(0);
   transition: all 0.6s;
@@ -2964,7 +2964,7 @@ body.dark-page .mouse-circle-mover-follow {
 }
 .service-area .service-item .service-text h3 a,
 .service-area-s2 .service-item .service-text h3 a {
-  color: #00372C;
+  color: #00E37D;
 }
 .service-area .service-item .service-text a.read-more,
 .service-area-s2 .service-item .service-text a.read-more {
@@ -4281,12 +4281,12 @@ body.dark-page .mouse-circle-mover-follow {
   height: 85px;
   line-height: 85px;
   text-align: center;
-  background: #00372C;
+  background: #00E37D;
   border-radius: 50%;
 }
 .service-area-s2 .service-wrap .service-item .service-text .icon i {
   font-size: 30px;
-  color: #00E37D;
+  color: #00372C;
 }
 .service-area-s2 .service-wrap .service-item .service-text .icon:before {
   display: none;
