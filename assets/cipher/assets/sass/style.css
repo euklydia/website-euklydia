@@ -303,19 +303,6 @@ img {
   background-color: #00E37D;
 }
 
-.back-btn i {
-  font-size: 18px;
-  font-size: calc-rem-value(18);
-  color: #00372C;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
 
 /** for popup image ***/
 .mfp-wrap {
