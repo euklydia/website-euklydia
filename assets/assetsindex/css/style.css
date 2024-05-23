@@ -6890,24 +6890,29 @@ footer .f-item.link li a:hover {
 	transition: all 0.35s ease-in-out;
 }
 
+
+
+.accordion-portfolio-lists li:nth-child(1)::after {
+	background: #013133;
+}
 .accordion-portfolio-lists li:nth-child(2)::after {
-	background: #65fbd3;
+	background: #015646;
 }
 
 .accordion-portfolio-lists li:nth-child(3)::after {
-	background: #bccd7e;
+	background: #25b782;
 }
 
 .accordion-portfolio-lists li:nth-child(4)::after {
-	background: #6a850b;
+	background: #0ff487;
 }
 
 .accordion-portfolio-lists li:nth-child(5)::after {
-	background: #0b8511;
+	background: #88e5c3;
 }
 
 .accordion-portfolio-lists li:nth-child(6)::after {
-	background: #0b8552;
+	background: #bce8d4;
 }
 .accordion-portfolio-lists li.out::after {
 	opacity: 0;
@@ -8272,7 +8277,6 @@ ul.contact-address > li:first-child {
 }
 
 
-/* Mobile */
 /* Mobile */
 @media (max-width: 767px) {
     /* Accordion Portfolio */

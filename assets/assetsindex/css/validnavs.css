@@ -181,7 +181,7 @@ Version: 1.0
 
 .navbar-brand>img {
 	display: block;
-	height: 55px;
+	height: 45px;
 }
 
 .navbar-toggle {
@@ -913,7 +913,7 @@ body {
 }
 
 .side .widget .logo img {
-	height: 60px;
+	height: 45px;
 }
 
 body.on-side nav.navbar::after {
@@ -2446,7 +2446,6 @@ ul.simple-menu-list > li i {
 	}
 
 	.bg-dark nav.navbar.validnavs {
-		background: rgba(29, 29, 29, 0.6) !important;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	}
 

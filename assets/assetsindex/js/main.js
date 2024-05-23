@@ -1,8 +1,5 @@
 /* ===================================================================
     
-    Author          : Valid Theme
-    Template Name   : Avrix - Digital Agency Portfolio Template
-    Version         : 1.0
     
 * ================================================================= */
 (function($) {
