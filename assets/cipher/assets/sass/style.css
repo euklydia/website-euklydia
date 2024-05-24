@@ -1449,6 +1449,7 @@ body.dark-page .mouse-circle-mover-follow {
   z-index: 1;
   overflow: hidden;
 }
+
 .ch-main-hero::before,
 .ch-main-hero-s2::before {
   position: absolute;
@@ -2823,7 +2824,7 @@ body.dark-page .mouse-circle-mover-follow {
 .text-moving-sec {
   position: relative;
   z-index: 11;
-  margin-top: -120px;
+  margin-top: -100px;
   background-color: #000;
 
 }
@@ -2836,7 +2837,7 @@ body.dark-page .mouse-circle-mover-follow {
   transform: rotate(-1deg);
 }
 .text-moving-sec .text-moving .track {
-  animation: marquee 200s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 @keyframes marquee {
   from {
