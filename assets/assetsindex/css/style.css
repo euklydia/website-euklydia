@@ -8281,8 +8281,7 @@ ul.contact-address > li:first-child {
 @media (max-width: 767px) {
     /* Accordion Portfolio */
     .accrdion-portfolio-area .accordion-overlay span {
-        background: var(--bg-gradient);
-        padding: 4px 20px;
+         padding: 4px 20px;
         margin-bottom: 15px;
         transform: translateX(0);
     }

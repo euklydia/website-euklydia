@@ -2824,14 +2824,15 @@ body.dark-page .mouse-circle-mover-follow {
   position: relative;
   z-index: 11;
   margin-top: -120px;
+  background-color: #000;
+
 }
 .text-moving-sec .text-moving {
   position: relative;
   left: -10%;
   width: 120%;
   z-index: -1;
-  padding: 25px 0 20px;
-  background: #131514;
+  padding: 15px 0 10px;
   transform: rotate(-1deg);
 }
 .text-moving-sec .text-moving .track {
@@ -2863,10 +2864,9 @@ body.dark-page .mouse-circle-mover-follow {
 }
 @media (max-width: 991px) {
   .text-moving-sec .text-moving h1 span {
-    font-size: 30px;
-    margin: 0 20px;
-    letter-spacing: 20px;
-  }
+    font-size: 20px;
+    margin: 0 10px;
+   }
 }
 .text-moving-sec .text-moving h1 span:nth-child(even) {
   color: #00E37D;
