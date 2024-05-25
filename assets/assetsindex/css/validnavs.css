@@ -208,7 +208,22 @@ Version: 1.0
 	padding: 0;
 	display: block;
 }
-
+@media (max-width: 800px) {
+	.navbar-brand {
+		margin: 0;
+		padding: 0;
+		display: block;
+		width: 70%;
+	}
+}
+@media (max-width: 1000px) {
+	.navbar-brand {
+		margin: 0;
+		padding: 0;
+		display: block;
+		width: 70%;
+	}
+}
 .main-nav-content {
 	display: flex;
 	flex-wrap: wrap;
@@ -2896,7 +2911,7 @@ ul.simple-menu-list > li i {
 
 	nav.navbar.validnavs.navbar-fixed .logo {
 		display: block !important;
-		max-height: 30px;
+		max-height: 20px;
 	}
 
 	.navbar-brand>img {
@@ -3338,12 +3353,12 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 @media only screen and (max-width: 1023px) {
 	nav.navbar.validnavs .navbar-collapse.collapse.show img {
 		display: inline-block;
-		height: 60px;
+		height: 40px;
 	}
 
 	nav.navbar.validnavs .navbar-collapse.collapse img {
 		display: inline-block;
-		height: 60px;
+		height: 40px;
 	}
 }
 
