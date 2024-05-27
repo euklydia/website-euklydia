@@ -7689,8 +7689,7 @@ ul.contact-address > li:first-child {
 
 	.accrdion-portfolio-area, .accrdion-portfolio-area div {
 		height: inherit;
-		min-height: inherit;
-	}
+ 	}
 
 	.accordion-portfolio-lists li {
 		width: 100%;
