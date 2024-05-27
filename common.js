@@ -150,7 +150,7 @@ function loadFooter() {
     const footerHTML = `
     <div id="footer-placeholder" class="footer-scope">
     <footer class="footer-section style-2" style="background-color: #00372C; width: 100%; padding:0px 0;">
-        <div class="upper-footer" style="width: 100%; padding: 20px 15px;">
+        <div class="upper-footer" style="width: 100%; padding:">
             <div class="container" style="max-width: 100%;">
                 <div class="row">
                     <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
@@ -197,8 +197,7 @@ function loadFooter() {
                             <form action="#">
                                 <div class="form-field">
                                     <input type="email" placeholder="Your e-mail address" id="email" required="">
-                                    <button type="submit"><i class="icon-flyer"></i></button>
-                                </div>
+                                 </div>
                             </form>
                         </div>
                     </div>
@@ -214,11 +213,6 @@ function loadFooter() {
                         </div>
                     </div>
                     <div class="col col-lg-6 col-12">
-                        <ul class="lower-footer-link">
-                            <li><a href="./contact" style="color: aliceblue;">Terms &amp; Conditions</a></li>
-                            <li><a href="./contact" style="color: aliceblue;">Privacy Policy</a></li>
-                            <li><a href="./contact" style="color: aliceblue;">Contact Us</a></li>
-                        </ul>
                     </div>
                 </div>
             </div>
