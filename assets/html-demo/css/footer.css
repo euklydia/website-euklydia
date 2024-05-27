@@ -57,9 +57,8 @@
   @media (max-width: 767px) {
     .footer-section .upper-footer {
       padding: 60px 0 30px;
-
+      
     }
-    
   }
   @media (max-width: 991px) {
     .footer-section .upper-footer .col {
