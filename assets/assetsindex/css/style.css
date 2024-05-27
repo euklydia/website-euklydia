@@ -6593,7 +6593,6 @@ ul.list-item li:first-child {
 
 footer {
 	width: 92%;
-	margin: auto;
 	padding-bottom: 4%;
 }
 
@@ -7757,6 +7756,12 @@ ul.contact-address > li:first-child {
 	.error-box {
 		padding-top: 0;
 	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.navbar-brand{
+		width: 30%;
+	}
+	
 }
 
 /* Tablet */
