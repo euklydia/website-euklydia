@@ -1769,7 +1769,7 @@ p {
 .btn.btn-theme {
 	color: var(--white);
 	border: none;
-	background: var(--color-primary);
+	background: #00E37D;
 }
 
 .btn.btn-theme::after {
@@ -1794,7 +1794,7 @@ p {
 }
 
 .bg-dark .btn.btn-theme:hover {
-	color: var(--color-heading);
+	color: #00E37D;
 }
 
 .banner-style-four .btn.btn-theme::after {
