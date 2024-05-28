@@ -11,12 +11,14 @@ function loadHeader() {
                                 <a href="./"><img src="./assets/html-demo/images/logo blanc.png" alt="logo" style="max-height: 100%;"></a>
                             </div>
                         </div>
-                        <div class="col-xl-7 col-lg-7 col-md-1 col-1 text-right text-xl-right">
-                            <div class="main-menu">
+                        <div class="col-xl-8 col-lg-8 col-md-2 col-2 text-right text-xl-right">
+                        <div class="main-menu">
                                 <nav id="mobile-menu">
                                     <ul class="nav">
-                                        <li><a href="./about">About Us</a></li>
-                                        <li class="has-submenu"><a href="./service">Our Services</a>
+                                    <li><a href="./">Home </a></li>
+
+                                    <li><a href="./about">About Us</a></li>
+                                    <li class="has-submenu"><a href="./service">Our Services</a>
                                             <ul class="sub-menu">
                                                 <li><a href="./branddiagnosis">AI Brand diagnosis and tracking</a></li>
                                                 <li><a href="./Connecting customers">Connecting with your target customers</a></li>
@@ -33,6 +35,8 @@ function loadHeader() {
                                 </nav>
                             </div>
                         </div>
+
+                 
                        
                         <div class="col-12">
                             <div class="mobile-menu"></div>
