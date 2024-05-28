@@ -18,6 +18,7 @@ function loadHeader() {
                                     <li><a href="./">Home </a></li>
 
                                     <li><a href="./about">About Us</a></li>
+                                    <li><a href="./whyus">Why us</a></li>
                                     <li class="has-submenu"><a href="./service">Our Services</a>
                                             <ul class="sub-menu">
                                                 <li><a href="./branddiagnosis">AI Brand diagnosis and tracking</a></li>
@@ -27,7 +28,6 @@ function loadHeader() {
                                                 <li><a href="./Web creation">Web creation</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="./whyus">Why us</a></li>
                                         <li><a href="./UseCase">Case Study</a></li>
                                         <li><a href="./iaimpact">AI Impact</a></li>
                                         <li><a href="./contact">Contact</a></li>
