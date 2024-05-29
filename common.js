@@ -15,9 +15,9 @@ function loadHeader() {
                         <div class="main-menu">
                                 <nav id="mobile-menu">
                                     <ul class="nav">
-                                    <li><a href="./">Home </a></li>
+                                    <li><a href="./" >Home </a></li>
 
-                                    <li><a href="./about">About Us</a></li>
+                                    <li><a href="./about" >About Us</a></li>
                                     <li><a href="./whyus">Why us</a></li>
                                     <li class="has-submenu"><a href="./service">Our Services</a>
                                             <ul class="sub-menu">
@@ -32,18 +32,20 @@ function loadHeader() {
                                         <li><a href="./iaimpact">AI Impact</a></li>
                                         <li><a href="./contact">Contact</a></li>
                                     </ul>
+                                   
                                 </nav>
                             </div>
                         </div>
 
-                 
                        
                         <div class="col-12">
                             <div class="mobile-menu"></div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
+            
         </div>
     </header>
 </div> 

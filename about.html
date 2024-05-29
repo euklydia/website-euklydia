@@ -52,6 +52,106 @@
 <link rel="stylesheet" type="text/css" href="assets/html-demo/revolution/rs6.css" >
 <link href="assets/cipher/assets/css/themify-icons.css" rel="stylesheet" >
 <link href="assets/cipher/assets/css/icomoon.css" rel="stylesheet" >
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<style type="text/css">
+*
+{
+padding: 0;
+margin: 0;
+}
+
+.video
+{
+width: 80%;
+height: 580px;
+background:linear-gradient(rgba(0, 0, 0, 0.1),rgba(0,0,0,.5)),url(assets/dataanlysm2.png);
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.play-btn
+{
+display: flex;
+align-items: center;
+justify-content: center;
+ color: #00E37D;
+font-size: 50px;
+width: 100px;
+height: 100px;
+z-index: 2;
+border-radius: 100%;
+position: relative;
+}
+.play-btn:before
+{
+content: '';
+position: absolute;
+border:15px solid #00E37D;
+border-radius: 50%;
+top: -20px;
+left: -20px;
+right: -20px;
+bottom: -20px;
+animation: bloom1 1.5s linear infinite;
+opacity: 0;
+z-index: 1;
+}
+.video iframe {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.play-btn:after
+{
+content: '';
+position: absolute;
+border:15px solid #fff;
+border-radius: 50%;
+top: -20px;
+left: -20px;
+right: -20px;
+bottom: -20px;
+animation: bloom2 1.5s linear infinite;
+opacity: 0;
+animation-delay: .4s;
+z-index: 1;
+}
+@keyframes bloom1
+{
+0%
+{
+transform: scale(.5);
+}
+50%
+{
+opacity: 1;
+}
+100%
+{
+transform: scale(1.5);
+}
+}
+@keyframes bloom2
+{
+0%
+{
+transform: scale(.5);
+}
+50%
+{
+opacity: 1;
+}
+100%
+{
+transform: scale(1.5);
+}
+}
+
+</style>
 </head>
 <body >
       <!-- page wrapper -->
@@ -131,16 +231,37 @@
                </div>
             </div>
             
-            <div class="video-area">
-               <div class="container">
-                   <div class="video-img">
-                       <img class="imageParallax" src="assets/transformation.png" alt="">
-                       <div class="video-btn">
-                        <a href="https://www.youtube-nocookie.com/embed/2Ea_jz1ou7E?autoplay=1" class="video-btn" data-type="iframe"></a>
-                       </div>
-                   </div>
-               </div>
-           </div>
+            <div style="align-items: center;
+            justify-content: center;width: 100%;
+            display: flex;
+            
+            ">
+                     <div class="video">
+                        <div class="play-btn" id="play-button">
+                            <ion-icon name="play"></ion-icon>
+                        </div>
+                        <iframe id="youtube-video" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     </div>
+                    
+                    <script>
+                     document.getElementById('play-button').addEventListener('click', function() {
+                         var iframe = document.getElementById('youtube-video');
+                         var videoContainer = document.querySelector('.video');
+                         var videoID = '2Ea_jz1ou7E?si=8e5ShDUnLZ7qdLaj'; // Replace with your actual video ID
+                     
+                         // Update the iframe's src to include autoplay
+                         iframe.src = 'https://www.youtube.com/embed/' + videoID + '?autoplay=1';
+                     
+                         // Show the iframe and hide the play button and background
+                         iframe.style.display = 'block';
+                         videoContainer.style.background = 'none';
+                         this.style.display = 'none';
+                     });
+                     </script>
+                     
+                     
+                     
+                        </div>
 
 
 
@@ -340,17 +461,12 @@
 
       </div>
          <!-- footer End -->
-         <div class="pbmit-progress-wrap">
-            <svg class="pbmit-progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-               <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
-            </svg>
-         </div>
+      
       <!-- page wrapper End -->
 
       <!-- Search Box Start Here -->
      
       <!-- Search Box End Here -->
-
       <!-- Scroll To Top -->
     
       <!-- Scroll To Top End -->
