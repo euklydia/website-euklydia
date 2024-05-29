@@ -244,19 +244,18 @@ transform: scale(1.5);
                      </div>
                     
                     <script>
-                     document.getElementById('play-button').addEventListener('click', function() {
-                         var iframe = document.getElementById('youtube-video');
-                         var videoContainer = document.querySelector('.video');
-                         var videoID = '2Ea_jz1ou7E?si=8e5ShDUnLZ7qdLaj'; // Replace with your actual video ID
-                     
-                         // Update the iframe's src to include autoplay
-                         iframe.src = 'https://www.youtube.com/embed/' + videoID + '?autoplay=1';
-                     
-                         // Show the iframe and hide the play button and background
-                         iframe.style.display = 'block';
-                         videoContainer.style.background = 'none';
-                         this.style.display = 'none';
-                     });
+                  document.getElementById('play-button').addEventListener('click', function() {
+    var iframe = document.getElementById('youtube-video');
+    var videoContainer = document.querySelector('.video');
+    var videoID = '2Ea_jz1ou7E';  
+    
+     iframe.src = 'https://www.youtube.com/embed/' + videoID + '?autoplay=1';
+    
+     iframe.style.display = 'block';
+    videoContainer.style.background = 'none';
+    this.style.display = 'none';
+});
+
                      </script>
                      
                      
