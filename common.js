@@ -11,25 +11,25 @@ function loadHeader() {
                                 <a href="./"><img src="./assets/html-demo/images/logo blanc.png" alt="logo" style="max-height: 100%;"></a>
                             </div>
                         </div>
-                        <div class="col-xl-8 col-lg-8 col-md-2 col-2 text-right text-xl-right">
+                        <div class="col-xl-10 col-lg-10 col-md-8 col-8 text-right text-xl-right">
                         <div class="main-menu">
                                 <nav id="mobile-menu">
                                     <ul class="nav">
                                     <li><a href="./" >Home </a></li>
 
-                                    <li><a href="./about" >About Us</a></li>
-                                    <li><a href="./whyus">Why us</a></li>
-                                    <li class="has-submenu"><a href="./service">Our Services</a>
+                                    <li><a href="./about" >Our DNA</a></li>
+                                    <li><a href="./whyus">Our Unique Advantage</a></li>
+                                    <li class="has-submenu"><a href="./service">Boost Your Business</a>
                                             <ul class="sub-menu">
-                                                <li><a href="./branddiagnosis">AI Brand diagnosis and tracking</a></li>
-                                                <li><a href="./Connecting customers">Connecting with your target customers</a></li>
-                                                <li><a href="./socialmedia">Social media management and content creation</a></li>
-                                                <li><a href="./logodesign">Logo design and brand’s identity</a></li>
-                                                <li><a href="./Web creation">Web creation</a></li>
+                                                <li><a href="./branddiagnosis">Brand tracking </a></li>
+                                                <li><a href="./Connecting customers">Brand creation</a></li>
+                                                <li><a href="./socialmedia">Social Media Strategy</a></li>
+                                                <li><a href="./logodesign">Content creation </a></li>
+                                                <li><a href="./Web creation">Web Creation </a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="./UseCase">Case Study</a></li>
-                                        <li><a href="./iaimpact">AI Impact</a></li>
+                                        <li><a href="./UseCase">Success Stories</a></li>
+                                        <li><a href="./iaimpact">our green AI</a></li>
                                         <li><a href="./contact">Contact</a></li>
                                     </ul>
                                    
@@ -97,7 +97,7 @@ function loadFooter() {
                             </div>
                             <div class="contact-ft">
                                 <ul style="color: white;">
-                                    <li style="color: white;"><i class="icon-Group-7042" style="color: white;"></i>+33 6 19 09 14 48</li>
+                                    <li style="color: white;"><i class="icon-Group-7042" style="color: white;"></i>+216 55 005 630</li>
                                     <li style="color: white;"><i class="icon-Group-7043" style="color: white;"></i>contact@euklydia.com</li>
                                     <li style="color: white;"><i class="icon-Group-7044" style="color: white;"></i>Tunis, Tunisia <br>
                                     Paris, France</li>
@@ -187,7 +187,7 @@ function loadFooter() {
                             </div>
                             <div class="contact-ft">
                                 <ul style="color: white;">
-                                    <li style="color: white;"><i class="icon-Group-7042" style="color: white;"></i>+33 6 19 09 14 48</li>
+                                    <li style="color: white;"><i class="icon-Group-7042" style="color: white;"></i>+216 55 005 630</li>
                                     <li style="color: white;"><i class="icon-Group-7043" style="color: white;"></i>contact@euklydia.com</li>
                                     <li style="color: white;"><i class="icon-Group-7044" style="color: white;"></i>Tunis, Tunisia <br>
                                     Paris, France</li>
