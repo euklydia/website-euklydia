@@ -4472,6 +4472,7 @@ body.dark-page .mouse-circle-mover-follow {
 @media (max-width: 575px) {
   .ch-portfolio-area-s2 .porfolio-wrap .porfolio-item {
     text-align: center;
+    margin: 10px;
   }
 }
 .ch-portfolio-area-s2 .porfolio-wrap .porfolio-item .porfolio-img {
