@@ -22,9 +22,9 @@ function loadHeader() {
                                     <li class="has-submenu"><a href="./service">Boost Your Business</a>
                                             <ul class="sub-menu">
                                                 <li><a href="./branddiagnosis">Brand tracking </a></li>
-                                                <li><a href="./Connecting customers">Brand creation</a></li>
+                                                <li><a href="./brandcreation">Brand creation</a></li>
                                                 <li><a href="./socialmedia">Social Media Strategy</a></li>
-                                                <li><a href="./logodesign">Content creation </a></li>
+                                                <li><a href="./contentcreation">Content creation </a></li>
                                                 <li><a href="./Web creation">Web Creation </a></li>
                                             </ul>
                                         </li>
