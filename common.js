@@ -11,13 +11,13 @@ function loadHeader() {
                                 <a href="./"><img src="./assets/html-demo/images/logo blanc.png" alt="logo" style="max-height: 100%;"></a>
                             </div>
                         </div>
-                        <div class="col-xl-10 col-lg-10 col-md-8 col-8 text-right text-xl-right">
+                        <div class="col-xl-10 col-lg-14 col-md-8 col-8 text-right text-xl-right">
                         <div class="main-menu">
                                 <nav id="mobile-menu">
                                     <ul class="nav">
                                     <li><a href="./" >Home </a></li>
 
-                                    <li><a href="./about" >Our DNA</a></li>
+                                    <li><a href="./DNA" >Our DNA</a></li>
                                     <li><a href="./whyus">Our Unique Advantage</a></li>
                                     <li class="has-submenu"><a href="./service">Boost Your Business</a>
                                             <ul class="sub-menu">
@@ -29,8 +29,10 @@ function loadHeader() {
                                             </ul>
                                         </li>
                                         <li><a href="./UseCase">Success Stories</a></li>
-                                        <li><a href="./iaimpact">our green AI</a></li>
+                                        <li><a href="./iaimpact">Our green AI</a></li>
+                                        <li><a href="./blog">Blog</a></li>
                                         <li><a href="./contact">Contact</a></li>
+
                                     </ul>
                                    
                                 </nav>
@@ -85,7 +87,7 @@ function loadFooter() {
                             <ul>
                                 <li><a href="./" style="color: white;">Home</a></li>
                                 <li><a href="./service" style="color: white;">Services</a></li>
-                                <li><a href="./about" style="color: white;">About Us</a></li>
+                                <li><a href="./DNA" style="color: white;">Our DNA Us</a></li>
                                 <li><a href="./iaimpact" style="color: white;">AI Impact</a></li>
                             </ul>
                         </div>
@@ -175,8 +177,8 @@ function loadFooter() {
                             <ul>
                                 <li><a href="./" style="color: white;">Home</a></li>
                                 <li><a href="./service" style="color: white;">Services</a></li>
-                                <li><a href="./about" style="color: white;">About Us</a></li>
-                                <li><a href="./iaimpact" style="color: white;">AI Impact</a></li>
+                                <li><a href="./DNA" style="color: white;">Our DNA</a></li>
+                                <li><a href="./iaimpact" style="color: white;"> green AI </a></li>
                             </ul>
                         </div>
                     </div>

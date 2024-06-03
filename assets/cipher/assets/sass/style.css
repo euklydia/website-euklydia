@@ -106,12 +106,12 @@ img {
 }
 @media (max-width: 991px) {
   .ptb-120 {
-    padding: 30px 0;
+    padding: 10px 0;
   }
 }
 @media (max-width: 767px) {
   .ptb-120 {
-    padding: 40px 0;
+    padding: 10px 0;
   }
 }
 
@@ -2833,7 +2833,7 @@ body.dark-page .mouse-circle-mover-follow {
   left: -10%;
   width: 120%;
   z-index: -1;
-  padding: 15px 0 10px;
+  padding: 10px 0 10px;
   transform: rotate(-1deg);
 }
 .text-moving-sec .text-moving .track {
@@ -2865,9 +2865,17 @@ body.dark-page .mouse-circle-mover-follow {
 }
 @media (max-width: 991px) {
   .text-moving-sec .text-moving h1 span {
-    font-size: 20px;
-    margin: 0 10px;
+    font-size: 13px;
+    margin: 0 9px;
    }
+   .text-moving-sec .text-moving {
+    padding: 1px 0 1px;
+  }
+  .text-moving-sec .text-moving .track {
+    animation: marquee 8s linear infinite;
+  }
+  
+  
 }
 .text-moving-sec .text-moving h1 span:nth-child(even) {
   color: #00E37D;
@@ -4081,8 +4089,7 @@ body.dark-page .mouse-circle-mover-follow {
 @media (max-width: 991px) {
   .about-area-s2 .about-left-item {
     padding-right: 0;
-    padding-bottom: 110px;
-  }
+   }
 }
 @media (max-width: 450px) {
   .about-area-s2 .about-left-item {
@@ -4104,8 +4111,7 @@ body.dark-page .mouse-circle-mover-follow {
   }
 }
 .about-area-s2 .about-left-item .about-left-img img {
-  border-radius: 114.5px 114.5px 0px 0px;
-  width: 100%;
+   width: 100%;
 }
 .about-area-s2 .about-left-item .about-left-img .left-top-shape {
   position: absolute;
@@ -4252,6 +4258,7 @@ body.dark-page .mouse-circle-mover-follow {
 @media (max-width: 1199px) {
   .about-area-s2 .about-right-item .about-right-text p {
     margin-bottom: 40px;
+    margin: 10px;
   }
 }
 
@@ -5203,9 +5210,7 @@ body.dark-mode .about-area-s2 .about-left-item .about-left-img {
 body.dark-mode .about-area-s2 .about-left-item .about-left-img .simpleParallax {
   border-radius: 200px;
 }
-body.dark-mode .about-area-s2 .about-left-item .about-left-img img {
-  border-radius: 200px;
-}
+
 body.dark-mode .about-area-s2 .about-left-item .about-right-img .simpleParallax {
   border-radius: 100px;
 }
