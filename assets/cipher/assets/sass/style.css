@@ -4250,10 +4250,13 @@ body.dark-page .mouse-circle-mover-follow {
   .about-area-s2 .about-right-item .about-right-text h2 {
     font-size: 35px;
     line-height: 45px;
+    margin-left: 10px;
   }
 }
 .about-area-s2 .about-right-item .about-right-text p {
   margin-bottom: 50px;
+  text-align: justify;
+  margin: 5px;
 }
 @media (max-width: 1199px) {
   .about-area-s2 .about-right-item .about-right-text p {
