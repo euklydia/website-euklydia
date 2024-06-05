@@ -246,31 +246,30 @@ transform: scale(1.5);
             <div style="align-items: center;
             justify-content: center;width: 100%;
             display: flex;
-            
             ">
-                     <div class="video">
-                        <div class="play-btn" id="play-button">
-                            <ion-icon name="play"></ion-icon>
-                        </div>
-                        <iframe id="youtube-video" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                     </div>
-                    
-                    <script>
-                  document.getElementById('play-button').addEventListener('click', function() {
-    var iframe = document.getElementById('youtube-video');
-    var videoContainer = document.querySelector('.video');
-    var videoID = '2Ea_jz1ou7E';  
-    
-     iframe.src = 'https://www.youtube.com/embed/' + videoID + '?autoplay=1';
-    
-     iframe.style.display = 'block';
-    videoContainer.style.background = 'none';
-    this.style.display = 'none';
-});
+    <div class="video">
+        <div class="play-btn" id="play-button">
+            <ion-icon name="play"></ion-icon>
+        </div>
+        <iframe id="vimeo-video" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" allowfullscreen></iframe>
+    </div>
 
-                     </script>
-   
-                        </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+        document.getElementById('play-button').addEventListener('click', function() {
+            var iframe = document.getElementById('vimeo-video');
+            var videoContainer = document.querySelector('.video');
+            var videoID = '953660687'; // Vimeo video ID
+            
+            iframe.src = 'https://player.vimeo.com/video/' + videoID + '?autoplay=1';
+            
+            iframe.style.display = 'block';
+            videoContainer.style.background = 'none';
+            this.style.display = 'none';
+        });
+    </script>
+</div>
+
 
 
 
