@@ -50,6 +50,28 @@
       <link href="assets/cipher/assets/css/themify-icons.css" rel="stylesheet" >
       <link href="assets/cipher/assets/css/icomoon.css" rel="stylesheet" >
       <link rel="stylesheet" href="assets/html-demo/css/header.css" >
+      <style>
+      
+      .mobile-image {
+        display: block;
+        margin-top: -90px;
+
+      }
+      
+      .desktop-image {
+        display: none;
+      }
+      
+      /* Show desktop image on larger screens */
+      @media (min-width: 768px) {
+        .mobile-image {
+          display: none;
+        }
+      
+        .desktop-image {
+          display: block;
+        }
+      }</style>
   </head>
 <body>
    <!-- page wrapper -->
@@ -422,7 +444,10 @@
                 <br>
                 <br>
                 <img src="assets/boost2.png" class="img-fluid" alt="">
- 
+                
+                <img src="assets/whygraph-mobile.png" class="img-fluid mobile-image" alt="Why Graph Mobile">
+                <img src="assets/whygraph-desktop.png" class="img-fluid desktop-image" alt="Why Graph Desktop">
+                                  
 
              </div>
             <div class="container">
