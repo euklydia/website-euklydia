@@ -258,10 +258,7 @@ function loadFooter() {
                     </div>
                     <div class="col col-lg-6 col-12">
                         <ul class="lower-footer-link">
-                            <li><a href="./contact" style="color: aliceblue;" data-translate="terms_conditions">Terms &amp; Conditions</a></li>
-                            <li><a href="./contact" style="color: aliceblue;" data-translate="privacy_policy">Privacy Policy</a></li>
-                            <li><a href="./contact" style="color: aliceblue;" data-translate="contact_us">Contact Us</a></li>
-                        </ul>
+                         </ul>
                     </div>
                 </div>
             </div>
