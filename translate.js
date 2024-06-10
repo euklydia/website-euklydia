@@ -202,8 +202,8 @@ const translations = {
         'enhanced_design_alignment': 'Enhanced design alignment.',
         'streamlined_design_efficiency': 'Streamlined design efficiency.',
         'our_solution': 'Our solution',
-        'solution_title': 'When targeted design <small>insights</small> meet custom <small>creativity</small>',
-        'solution_description': 'Through our machine learning algorithms, we can identify patterns and correlations between different design elements, color schemes, and visual aesthetics that resonate with target audiences. <br><br> Our creative team adds an extra layer of creativity to make every customer special.',
+        'solution_title_creation': 'When targeted design <small>insights</small> meet custom <small>creativity</small>',
+        'solution_description_creation': 'Through our machine learning algorithms, we can identify patterns and correlations between different design elements, color schemes, and visual aesthetics that resonate with target audiences. <br><br> Our creative team adds an extra layer of creativity to make every customer special.',
 /// tracking
 
         'brand_tracking': 'Brand tracking',
@@ -485,8 +485,8 @@ const translations = {
         'enhanced_design_alignment': 'Alignement amélioré du design.',
         'streamlined_design_efficiency': 'Efficacité du design rationalisée.',
         'our_solution': 'Notre solution',
-        'solution_title': 'Quand les insights de design ciblé rencontrent la créativité personnalisée',
-        'solution_description': "Grâce à nos algorithmes d'apprentissage automatique, nous pouvons identifier des modèles et des corrélations entre différents éléments de design, schémas de couleurs et esthétiques visuelles qui résonnent avec les publics cibles. <br><br> Notre équipe créative ajoute une couche supplémentaire de créativité pour rendre chaque client spécial.",
+        'solution_title_creation': 'Quand les insights de design ciblé rencontrent la créativité personnalisée',
+        'solution_description_creation': "Grâce à nos algorithmes d'apprentissage automatique, nous pouvons identifier des modèles et des corrélations entre différents éléments de design, schémas de couleurs et esthétiques visuelles qui résonnent avec les publics cibles. <br><br> Notre équipe créative ajoute une couche supplémentaire de créativité pour rendre chaque client spécial.",
 /// tracking
 
         'brand_tracking': 'Suivi de marque',
