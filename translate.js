@@ -140,7 +140,7 @@ const translations = {
         'blog_intro': 'Your source for inspiration and knowledge',
         'date': 'June 1, 2024',
         'article1_title': '10 Major digital marketing trends to follow in 2024',
-        'article1_description': 'Discover the key developments set to shape this pivotal year. fermentum ullamcorper viverra laoreet Aliquam.',
+        'article1_description': 'Discover the key developments set to shape this pivotal year. 10 Major Digital Marketing Trends to Follow in 2024.',
         'read_more': 'Read more',
 
         // Article 1
@@ -421,7 +421,7 @@ const translations = {
                 'blog_intro': 'Votre source d\'inspiration et de connaissance',
                 'date': '1er juin 2024',
                 'article1_title': '10 grandes tendances du marketing digital à suivre en 2024',
-                'article1_description': 'Découvrez les développements clés qui façonneront cette année charnière. fermentum ullamcorper viverra laoreet Aliquam.',
+                'article1_description': 'Découvrez les développements clés qui façonneront cette année charnière. 10 grandes tendances du marketing digital à suivre en 2024.',
                 'read_more': 'En savoir plus',
         
         // Article 1
