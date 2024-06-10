@@ -11,6 +11,7 @@
     <!-- ========== Page Title ========== -->
     <script src="common.js" defer></script>
     <link rel="stylesheet" href="assets/html-demo/css/footer.css">
+    
     <link href="assets/cipher/assets/sass/style.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/html-demo/css/header.css">
 
@@ -43,6 +44,8 @@
     <link href="assets/assetsindex/css/helper.css" rel="stylesheet">
     <link href="assets/assetsindex/css/unit-test.css" rel="stylesheet">
     <link href="assets/assetsindex/css/style.css" rel="stylesheet">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+
 </head>
 
 <body class="bg-dark">
@@ -68,18 +71,70 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="col-xl-7 col-lg-6">
                     <div class="collapse navbar-collapse" id="navbar-menu">
+                        
                         <div class="left-info"></div>
                         <div class="right-info">
                             <ul></ul>
                         </div>
                     </div>
                 </div>
+                
+                <div class="dropdown">
+                    <button class="dropbtn"><i id="current-lang"class="flag-icon flag-icon-fr"></i></button>
+                    <div class="dropdown-content">
+                        <a id="fr" class="lang" data-lang="fr"><i class="flag-icon flag-icon-fr"></i> French</a>
+                        <a id="en" class="lang" data-lang="en"><i class="flag-icon flag-icon-us"></i> English</a>
+                    </div>
 
+                    <style>
+                        .dropdown-content a:hover {
+                           background-color: #00E37D;
+                       }
+                       
+                   </style>
+                  
+        
+                    <script>
+                        // Assuming you have a way to determine the current language, e.g., from a cookie or a global variable
+                        var currentLang = 'en'; // This should be dynamically determined
+                        var currentLangIcon = document.getElementById('current-lang');
+                    
+                        // Function to set the current language icon
+                        function setCurrentLanguage(lang) {
+                            if (lang === 'fr') {
+                                currentLangIcon.className = 'flag-icon flag-icon-fr';
+                            } else if (lang === 'en') {
+                                currentLangIcon.className = 'flag-icon flag-icon-us';
+                            }
+                        }
+                    
+                        // Set the current language icon on page load
+                        setCurrentLanguage(currentLang);
+                    
+                        // Add event listeners to language links
+                        document.querySelectorAll('.dropdown-content .lang').forEach(function(langLink) {
+                            langLink.addEventListener('click', function() {
+                                var selectedLang = this.getAttribute('data-lang');
+                                setCurrentLanguage(selectedLang);
+                                // You may also want to save the selected language to a cookie or send it to the server
+                            });
+                        });
+                    </script>
+                    
+                  
+                  <!-- Link to my website -->
+                </div>
+        
                 <div class="attr-right">
                     <!-- Start Attribute Navigation -->
                     <div class="attr-nav flex">
                         <ul>
-                            <li class="side-menu">
+
+
+                            <div id="i18n-switch"></div>
+
+                              
+                             <li class="side-menu">
                                 <a href="#">
                                     <strong></strong>
                                     <div class="line">
@@ -87,94 +142,97 @@
                                         <span class="bar-2"></span>
                                         <span class="bar-3"></span>
                                     </div>
+
                                 </a>
+                                
                             </li>
                         </ul>
+                      
+ 
                     </div>
-                    <!-- End Attribute Navigation -->
-
-                    <div class="col-lg-2">
-                        <!-- Start Side Menu -->
-                        <div class="side text-light">
-                            <a href="#" class="close-side">Close <i class="fas fa-times"></i></a>
-                            <div class="widget">
-                                <div class="logo">
-                                    <img src="assets/logo blanc.png" alt="Logo">
-                                </div>
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1">
-                                        <div class="side-navbar-inner">
-                                            <div class="simple-menu">
-                                                <ul class="simple-menu-list">
-                                                    <li><a href="./DNA">Our DNA</a></li>
-                                                    <li><a href="./whyus">Our Unique Advantage</a></li>
-
-                                                    <li class="has-submenu"><a href="./service">Boost your Business</a><i class="fas fa-plus"></i>
-                                                        <ul class="sub-menu">
-                                                            <li><a href="./branddiagnosis">Brand tracking </a></li>
-                                                            <li><a href="./brandcreation">Brand creation</a></li>
-                                                            <li><a href="./socialmedia">Social Media Strategy</a></li>
-                                                            <li><a href="./contentcreation">Content creation </a></li>
-                                                            <li><a href="./Web creation">Web Creation </a></li>
-            
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="./UseCase">Success Stories</a></li>
-                                                    <li><a href="./iaimpact">our green AI</a></li>
-                                                    <li><a href="./blog">Blog</a></li>
-                                                    <li><a href="./contact">Contact</a></li>
-                                                </ul>
-                                            </div>
+ 
+                   <div class="col-lg-2">
+    <!-- Start Side Menu -->
+    <div class="side text-light">
+        <a href="#" class="close-side">Fermer <i class="fas fa-times"></i></a>
+        <div class="widget">
+            <div class="logo">
+                <img src="assets/logo blanc.png" alt="Logo">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1">
+                    <div class="side-navbar-inner">
+                        <div class="simple-menu">
+                            <ul class="simple-menu-list">
+                                <li><a href="./DNA" data-translate="our_dna">Our DNA</a></li>
+                                <li><a href="./whyus" data-translate="our_unique_advantage">Our Unique Advantage</a></li>
+                                <li class="has-submenu"><a href="./service" data-translate="boost_your_business">Boost your Business</a><i class="fas fa-plus"></i>
+                                    <ul class="sub-menu">
+                                        <li><a href="./branddiagnosis" data-translate="brand_tracking">Brand tracking</a></li>
+                                        <li><a href="./brandcreation" data-translate="brand_creation">Brand creation</a></li>
+                                        <li><a href="./socialmedia" data-translate="social_media_strategy">Social Media Strategy</a></li>
+                                        <li><a href="./contentcreation" data-translate="content_creation">Content creation</a></li>
+                                        <li><a href="./webcreation" data-translate="web_creation">Web Creation</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./UseCase" data-translate="success_stories">Success Stories</a></li>
+                                <li><a href="./iaimpact" data-translate="our_green_ai">Our Green AI</a></li>
+                                <li><a href="./blog" data-translate="blog">Blog</a></li>
+                                <li><a href="./contact" data-translate="contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1">
+                    <div class="side-widgets">
+                        <div class="widget address">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div class="content">
+                                            <p data-translate="address">Address</p>
+                                            <strong>Tunis, Tunisia <br> Paris, France</strong>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1">
-                                        <div class="side-widgets">
-                                            <div class="widget address">
-                                                <div>
-                                                    <ul>
-                                                        <li>
-                                                            <div class="content">
-                                                                <p>Address</p>
-                                                                <strong>Tunis, Tunisia <br> Paris, France</strong>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="content">
-                                                                <p>Email</p>
-                                                                <strong>contact@euklydia.com</strong>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="content">
-                                                                <p>Contact</p>
-                                                                <strong>+216 55 005 630</strong>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="widget newsletter">
-                                                <h4 class="title">Get Subscribed!</h4>
-                                                <form action="#">
-                                                    <div class="input-group stylish-input-group">
-                                                        <input type="email" placeholder="Enter your e-mail" class="form-control" name="email">
-                                                        <span class="input-group-addon">
-                                                            <button type="submit">
-                                                                <i class="fas fa-arrow-right"></i>
-                                                            </button>
-                                                        </span>
-                                                    </div>
-                                                </form>
-                                            </div>
+                                    </li>
+                                    <li>
+                                        <div class="content">
+                                            <p data-translate="email">Email</p>
+                                            <strong>contact@euklydia.com</strong>
                                         </div>
-                                    </div>
-                                </div>
+                                    </li>
+                                    <li>
+                                        <div class="content">
+                                            <p data-translate="contact">Contact</p>
+                                            <strong>+216 55 005 630</strong>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <!-- End Side Menu -->
+                        <div class="widget newsletter">
+                            <h4 class="title" data-translate="get_subscribed">Get Subscribed!</h4>
+                            <form action="#">
+                                <div class="input-group stylish-input-group">
+                                    <input type="email" placeholder="Enter your e-mail" class="form-control" name="email" data-translate-placeholder="enter_email">
+                                    <span class="input-group-addon">
+                                        <button type="submit">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Side Menu -->
+</div>
+
                 </div>
             </div>
             <!-- Overlay screen for menu -->
@@ -192,60 +250,59 @@
             <div class="row">
                 <ul class="accordion-portfolio-lists text-light" id="accordion">
                     <li style="background-image: url('assets/eu9lidos.jpg');">
-                        <h3>Our DNA</h3>
+                        <h3 data-translate="our_dna">Our DNA</h3>
                         <span>01</span>
                         <div class="accordion-overlay">
-                             <h2><a href="#" data-bs-toggle="modal">Our DNA</a></h2>
-                            <p>AI-driven marketing startup blending data and creativity to boost your business by crafting precise strategies and content creation.  </p>
+                            <h2><a href="#" data-bs-toggle="modal" data-translate="our_dna">Our DNA</a></h2>
+                            <p data-translate="paragraph1">AI-driven marketing startup blending data and creativity to boost your business by crafting precise strategies and content creation.</p>
                             <a href="./DNA" data-bs-toggle="modal"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </li>
                     <li style="background-image: url('assets/dataanlysm2.png');">
-                        <h3>Our Unique Advantage </h3>
+                        <h3 data-translate="our_unique_advantage">Our Unique Advantage</h3>
                         <span>02</span>
                         <div class="accordion-overlay">
-                             <h2><a href="./whyus" data-bs-toggle="modal">Our Unique Advantage </a></h2>
-                            <p>You buisness benefit from our tailored strategies, precise targeting, and optimized funnels for effective marketing campaigns. </p>
+                            <h2><a href="./whyus" data-bs-toggle="modal" data-translate="our_unique_advantage">Our Unique Advantage</a></h2>
+                            <p data-translate="paragraph2">Your business benefits from our tailored strategies, precise targeting, and optimized funnels for effective marketing campaigns.</p>
                             <a href="./whyus" data-bs-toggle="modal"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </li>
                     <li style="background-image: url('assets/service99.webp');">
-                        <h3>Boost Your Business</h3>
+                        <h3 data-translate="boost_your_business">Boost Your Business</h3>
                         <span>03</span>
                         <div class="accordion-overlay">
-                             <h2><a href="#" data-bs-toggle="modal">Boost Your Business</a></h2>
-                            <p>We enhance brand tracking, predict customer behavior, and boost digital presence with our in-house AI. </p>
+                            <h2><a href="#" data-bs-toggle="modal" data-translate="boost_your_business">Boost Your Business</a></h2>
+                            <p data-translate="paragraph3">We enhance brand tracking, predict customer behavior, and boost digital presence with our in-house AI.</p>
                             <a href="./service" data-bs-toggle="modal"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </li>
                     <li style="background-image: url('assets/sais.webp');">
-                        <h3>Our green AI </h3>
+                        <h3 data-translate="our_green_ai">Our green AI</h3>
                         <span>04</span>
                         <div class="accordion-overlay">
-                             <h2><a href="#" data-bs-toggle="modal">Our green AI </a></h2>
-                            <p>We reduce carbon footprint by using transfer learning for AI development, eliminating the need for data centers. </p>
+                            <h2><a href="#" data-bs-toggle="modal" data-translate="our_green_ai">Our green AI</a></h2>
+                            <p data-translate="paragraph4">We reduce carbon footprint by using transfer learning for AI development, eliminating the need for data centers.</p>
                             <a href="./iaimpact" data-bs-toggle="modal"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </li>
                     <li style="background-image: url('assets/usestudy.webp');">
-                        <h3>Success Stories </h3>
+                        <h3 data-translate="success_stories">Success Stories</h3>
                         <span>05</span>
                         <div class="accordion-overlay">
-                             <h2><a href="#" data-bs-toggle="modal">Success Stories </a></h2>
-                            <p>We transform challenging situations into effective results for you. </p>
+                            <h2><a href="#" data-bs-toggle="modal" data-translate="success_stories">Success Stories</a></h2>
+                            <p data-translate="paragraph5">We transform challenging situations into effective results for you.</p>
                             <a href="./UseCase" data-bs-toggle="modal"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </li>
                     <li style="background-image: url('assets/eyklydecontact.webp');">
-                        <h3>We're Here for You </h3>
+                        <h3 data-translate="we_are_here">We're Here for You</h3>
                         <span>06</span>
                         <div class="accordion-overlay">
-                             <h2><a href="#" data-bs-toggle="modal">We're Here for You </a></h2>
-                            <p>Your success drives us—reach out with any questions. We're here to help you thrive! </p>
+                            <h2><a href="#" data-bs-toggle="modal" data-translate="we_are_here">We're Here for You</a></h2>
+                            <p data-translate="paragraph6">Your success drives us—reach out with any questions. We're here to help you thrive!</p>
                             <a href="./contact" data-bs-toggle="modal"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </li>
-
                 </ul>
                 
 
@@ -255,11 +312,41 @@
     </div>                  
     </div>
 
-
-    <!-- End Accordion Portfolio -->
-
-    <!-- Placeholder for Footer -->
-
+    <script> 
+        function setLanguage(lang) {
+            localStorage.setItem('selectedLanguage', lang);
+            updateLanguageUI(lang);
+        }
+        
+         function updateLanguageUI(lang) {
+            const languageFlag = document.querySelector('.dropbtn i');
+            if (lang === 'fr') {
+                languageFlag.className = 'flag-icon flag-icon-fr';
+            } else if (lang === 'en') {
+                languageFlag.className = 'flag-icon flag-icon-us';
+            }
+        }
+        
+         function initializeLanguage() {
+            const savedLanguage = localStorage.getItem('selectedLanguage');
+            if (savedLanguage) {
+                updateLanguageUI(savedLanguage);
+            } else {
+                // Default language
+                setLanguage('fr');
+            }
+        }
+        
+         document.getElementById('fr').addEventListener('click', function() {
+            setLanguage('fr');
+        });
+        
+        document.getElementById('en').addEventListener('click', function() {
+            setLanguage('en');
+        });
+        
+         document.addEventListener('DOMContentLoaded', initializeLanguage);
+        </script>
     <!-- jQuery Frameworks -->
     <script src="assets/assetsindex/js/jquery-3.6.0.min.js"></script>
     <script src="assets/assetsindex/js/bootstrap.bundle.min.js"></script>
@@ -279,5 +366,6 @@
     <script src="assets/assetsindex/js/ScrollTrigger.min.js"></script>
     <script src="assets/assetsindex/js/ScrollSmoother.min.js"></script>
     <script src="assets/assetsindex/js/main.js"></script>
+    <script src="translate.js"></script>
 </body>
 </html>

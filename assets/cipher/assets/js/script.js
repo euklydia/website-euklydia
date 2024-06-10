@@ -382,4 +382,52 @@ for (let i = 0; i < matrixData.length; i++) {
  
 
   
-  
+document.querySelectorAll('.lang').forEach(button => {
+    button.addEventListener('click', event => {
+        event.preventDefault();
+        const lang = event.target.closest('.lang').getAttribute('data-lang');
+        console.log('Language switch to:', lang); // Debugging line
+        translateContent(lang);
+    });
+});
+
+ // Function to set the active language
+function setLanguage(lang) {
+    localStorage.setItem('selectedLanguage', lang);
+    updateLanguageUI(lang);
+}
+
+// Function to update the UI based on the selected language
+function updateLanguageUI(lang) {
+    const languageFlag = document.querySelector('.dropbtn i');
+    if (lang === 'fr') {
+        languageFlag.className = 'flag-icon flag-icon-fr';
+    } else if (lang === 'en') {
+        languageFlag.className = 'flag-icon flag-icon-us';
+    }
+}
+
+// Function to initialize the language based on localStorage
+function initializeLanguage() {
+    const savedLanguage = localStorage.getItem('selectedLanguage');
+    if (savedLanguage) {
+        updateLanguageUI(savedLanguage);
+    } else {
+        // Default language
+        setLanguage('fr');
+    }
+}
+
+// Event listeners for language selection
+document.getElementById('fr').addEventListener('click', function() {
+    setLanguage('fr');
+});
+
+document.getElementById('en').addEventListener('click', function() {
+    setLanguage('en');
+});
+
+// Initialize language on page load
+document.addEventListener('DOMContentLoaded', initializeLanguage);
+
+

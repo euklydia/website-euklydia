@@ -277,8 +277,7 @@ Version: 1.0
 
 .navbar .attr-right .attr-nav li a:nth-child(2) {
 	background: transparent !important;
-	border: 2px solid var(--color-heading);
-	color: var(--color-heading);
+ 	color: var(--color-heading);
 	padding: 11px 40px !important;
 	margin-left: 10px;
 }
