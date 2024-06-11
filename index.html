@@ -11,7 +11,7 @@
     <!-- ========== Page Title ========== -->
     <script src="common.js" defer></script>
     <link rel="stylesheet" href="assets/html-demo/css/footer.css">
-    
+
     <link href="assets/cipher/assets/sass/style.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/html-demo/css/header.css">
 
@@ -79,51 +79,55 @@
                     </div>
                 </div>
                 
-                <div class="dropdown">
-                    <button class="dropbtn"><i id="current-lang"class="flag-icon flag-icon-fr"></i></button>
-                    <div class="dropdown-content">
-                        <a id="fr" class="lang" data-lang="fr"><i class="flag-icon flag-icon-fr"></i> French</a>
-                        <a id="en" class="lang" data-lang="en"><i class="flag-icon flag-icon-us"></i> English</a>
-                    </div>
+             <div class="dropdown">
+    <button class="dropbtn"><i id="current-lang" class="flag-icon flag-icon-fr"></i></button>
+    <div class="dropdown-content">
+        <a id="fr" class="lang" data-lang="fr"><i class="flag-icon flag-icon-fr"></i> French</a>
+        <a id="en" class="lang" data-lang="en"><i class="flag-icon flag-icon-us"></i> English</a>
+    </div>
 
-                    <style>
-                        .dropdown-content a:hover {
-                           background-color: #00E37D;
-                       }
-                       
-                   </style>
-                  
-        
-                    <script>
-                        // Assuming you have a way to determine the current language, e.g., from a cookie or a global variable
-                        var currentLang = 'en'; // This should be dynamically determined
-                        var currentLangIcon = document.getElementById('current-lang');
-                    
-                        // Function to set the current language icon
-                        function setCurrentLanguage(lang) {
-                            if (lang === 'fr') {
-                                currentLangIcon.className = 'flag-icon flag-icon-fr';
-                            } else if (lang === 'en') {
-                                currentLangIcon.className = 'flag-icon flag-icon-us';
-                            }
-                        }
-                    
-                        // Set the current language icon on page load
-                        setCurrentLanguage(currentLang);
-                    
-                        // Add event listeners to language links
-                        document.querySelectorAll('.dropdown-content .lang').forEach(function(langLink) {
-                            langLink.addEventListener('click', function() {
-                                var selectedLang = this.getAttribute('data-lang');
-                                setCurrentLanguage(selectedLang);
-                                // You may also want to save the selected language to a cookie or send it to the server
-                            });
-                        });
-                    </script>
-                    
-                  
-                  <!-- Link to my website -->
-                </div>
+    <style>
+        .dropdown-content a:hover {
+            background-color: #00E37D !important;
+        }
+
+        .dropdown-content a {
+            cursor: pointer; /* Add cursor pointer for the links */
+        }
+
+        .dropbtn {
+            cursor: pointer; /* Add cursor pointer for the button */
+        }
+    </style>
+
+    <script>
+        // Assuming you have a way to determine the current language, e.g., from a cookie or a global variable
+        var currentLang = 'en'; // This should be dynamically determined
+        var currentLangIcon = document.getElementById('current-lang');
+
+        // Function to set the current language icon
+        function setCurrentLanguage(lang) {
+            if (lang === 'fr') {
+                currentLangIcon.className = 'flag-icon flag-icon-fr';
+            } else if (lang === 'en') {
+                currentLangIcon.className = 'flag-icon flag-icon-us';
+            }
+        }
+
+        // Set the current language icon on page load
+        setCurrentLanguage(currentLang);
+
+        // Add event listeners to language links
+        document.querySelectorAll('.dropdown-content .lang').forEach(function(langLink) {
+            langLink.addEventListener('click', function() {
+                var selectedLang = this.getAttribute('data-lang');
+                setCurrentLanguage(selectedLang);
+                // You may also want to save the selected language to a cookie or send it to the server
+            });
+        });
+    </script>
+</div>
+
         
                 <div class="attr-right">
                     <!-- Start Attribute Navigation -->
