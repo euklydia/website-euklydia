@@ -25,9 +25,9 @@ html {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     width: 60px;
     height: $switch-height;
-    margin: 5px auto;
+    margin:auto }
 
-    &:before , &:after {
+&:before , &:after {
         position: absolute;
         color: white;
         font-family: 'Raleway', sans-serif;
